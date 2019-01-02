@@ -6,7 +6,7 @@ A collection of Homebrew formulas
 $ brew tap k1LoW/tap
 ```
 
-## [k1LoW/tbls](https://github.com/k1LoW/tbls)
+## [tbls](https://github.com/k1LoW/tbls)
 
 ```console
 $ brew install k1LoW/tap/tbls
