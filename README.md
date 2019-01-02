@@ -11,3 +11,9 @@ $ brew tap k1LoW/tap
 ```console
 $ brew install k1LoW/tap/tbls
 ```
+
+## [evry](https://github.com/k1LoW/evry)
+
+```console
+$ brew install k1LoW/tap/evry
+```
