@@ -1,9 +1,9 @@
 class Evry < Formula
   desc 'evry split STDIN stream and execute specified command every N lines/seconds.'
   homepage 'https://github.com/k1LoW/evry'
-  version '0.1.2'
+  version '0.2.0'
   url "https://github.com/k1LoW/evry/releases/download/v#{version}/evry_v#{version}_darwin_amd64.zip"
-  sha256 '1d927aad667ffc2b6eabab4bd9ea8724026806de31abd18043ca07db474aea56'
+  sha256 '4b5903358ef06d3958d99c48cfb00acb27bb2c4338bf3d0b372f485259a6e344'
 
   def install
     bin.install 'evry'
