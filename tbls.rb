@@ -2,9 +2,9 @@
 class Tbls < Formula
   desc "tbls is a CI-Friendly tool for document a database, written in Go."
   homepage "https://github.com/k1LoW/tbls"
-  url "https://github.com/k1LoW/tbls/releases/download/v1.15.4/tbls_v1.15.4_darwin_amd64.zip"
-  version "1.15.4"
-  sha256 "1c0d32ff39953cd9c0f3643e97f9ad264ba3281c4f64f05d8e07953c16ae407c"
+  url "https://github.com/k1LoW/tbls/releases/download/v1.16.0/tbls_v1.16.0_darwin_amd64.zip"
+  version "1.16.0"
+  sha256 "a90ef6461fa9a71274a40d096de52581540ad5a000ba3f19887b511037210394"
 
   def install
     bin.install 'tbls'
