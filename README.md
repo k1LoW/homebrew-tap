@@ -29,3 +29,9 @@ $ brew install k1LoW/tap/mk
 ```console
 $ brew install k1LoW/tap/harvest
 ```
+
+## [filt](https://github.com/k1LoW/filt)
+
+```console
+$ brew install k1LoW/tap/filt
+```
