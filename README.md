@@ -35,3 +35,9 @@ $ brew install k1LoW/tap/harvest
 ```console
 $ brew install k1LoW/tap/filt
 ```
+
+## [colr](https://github.com/k1LoW/colr)
+
+```console
+$ brew install k1LoW/tap/colr
+```
