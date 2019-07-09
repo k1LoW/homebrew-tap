@@ -2,14 +2,14 @@
 class Colr < Formula
   desc "colr colors strings, colorfully."
   homepage "https://github.com/k1LoW/colr"
-  version "0.1.0"
+  version "0.2.0"
 
   if OS.mac?
-    url "https://github.com/k1LoW/colr/releases/download/v0.1.0/colr_v0.1.0_darwin_amd64.zip"
-    sha256 "e8698999c0ed25e158cd4a5e8d3eac2c73fa89591ed587c8864e0736e05a4563"
+    url "https://github.com/k1LoW/colr/releases/download/v0.2.0/colr_v0.2.0_darwin_amd64.zip"
+    sha256 "9105ec84ff696c16523083fd96e3f970bb08c9cba3464a7aa1135da4c8933b12"
   elsif OS.linux?
-    url "https://github.com/k1LoW/colr/releases/download/v0.1.0/colr_v0.1.0_linux_amd64.tar.gz"
-    sha256 "744ef8d47e1373a29d0484233a754f0be6569a515ffc98adc0fcbeeb113016be"
+    url "https://github.com/k1LoW/colr/releases/download/v0.2.0/colr_v0.2.0_linux_amd64.tar.gz"
+    sha256 "746e6746e8e7079db95acaee5a2e683aa3cd65558c41cb8f483a6b7faeda26cc"
   end
 
   def install
