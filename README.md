@@ -41,3 +41,15 @@ $ brew install k1LoW/tap/filt
 ```console
 $ brew install k1LoW/tap/colr
 ```
+
+## [dio](https://github.com/k1LoW/dio)
+
+```console
+$ brew install k1LoW/tap/dio
+```
+
+## [metr](https://github.com/k1LoW/metr)
+
+```console
+$ brew install k1LoW/tap/metr
+```
