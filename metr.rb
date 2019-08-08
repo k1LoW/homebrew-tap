@@ -2,14 +2,14 @@
 class Metr < Formula
   desc "metr gets system metrics."
   homepage "https://github.com/k1LoW/metr"
-  version "0.4.0"
+  version "0.5.0"
 
   if OS.mac?
-    url "https://github.com/k1LoW/metr/releases/download/v0.4.0/metr_v0.4.0_darwin_amd64.zip"
-    sha256 "4d3a46e24b54b36181a1884b9cfc81226cd9a12905f4ddd9ef78b99f10bf3c84"
+    url "https://github.com/k1LoW/metr/releases/download/v0.5.0/metr_v0.5.0_darwin_amd64.zip"
+    sha256 "48619a9b9b76b04f80a6f748ab1e1d8e57547a30865d4e6551958002163f41bf"
   elsif OS.linux?
-    url "https://github.com/k1LoW/metr/releases/download/v0.4.0/metr_v0.4.0_linux_amd64.tar.gz"
-    sha256 "906ab49aaf08b16ea280c237359db4ebf074a285b0ab5e9c9e93ca2a79e4203b"
+    url "https://github.com/k1LoW/metr/releases/download/v0.5.0/metr_v0.5.0_linux_amd64.tar.gz"
+    sha256 "f19438d45a1c47e38b5e7680fe9c576023629dc3ae82ac6d91765521d8f333b9"
   end
 
   def install
