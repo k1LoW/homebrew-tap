@@ -53,3 +53,11 @@ $ brew install k1LoW/tap/dio
 ```console
 $ brew install k1LoW/tap/metr
 ```
+
+---
+
+## http://github.com/pc/tsocks
+
+```console
+$ brew install k1LoW/tap/tsocks
+```
