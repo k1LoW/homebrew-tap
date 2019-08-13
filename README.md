@@ -56,7 +56,13 @@ $ brew install k1LoW/tap/metr
 
 ---
 
-## http://github.com/pc/tsocks
+## imgcat: https://www.iterm2.com/documentation-images.html
+
+```console
+$ brew install k1LoW/tap/imgcat
+```
+
+## tsocks: http://github.com/pc/tsocks
 
 ```console
 $ brew install k1LoW/tap/tsocks
