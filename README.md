@@ -56,6 +56,12 @@ $ brew install k1LoW/tap/metr
 
 ---
 
+## alp: https://github.com/tkuchiki/alp
+
+```console
+$ brew install k1LoW/tap/alp
+```
+
 ## imgcat: https://www.iterm2.com/documentation-images.html
 
 ```console
