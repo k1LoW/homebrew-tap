@@ -54,6 +54,12 @@ $ brew install k1LoW/tap/dio
 $ brew install k1LoW/tap/metr
 ```
 
+## [tsplt](https://github.com/k1LoW/tsplt)
+
+```console
+$ brew install k1LoW/tap/tsplt
+```
+
 ---
 
 ## alp: https://github.com/tkuchiki/alp
