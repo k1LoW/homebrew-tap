@@ -2,14 +2,14 @@
 class Tsplt < Formula
   desc "plot time series data."
   homepage "https://github.com/k1LoW/tsplt"
-  version "0.2.0"
+  version "0.2.1"
 
   if OS.mac?
-    url "https://github.com/k1LoW/tsplt/releases/download/v0.2.0/tsplt_v0.2.0_darwin_amd64.zip"
-    sha256 "81d8682516cb30d1590ad5748af98dd48fb98c2aaf2f29126da448fa76c771b7"
+    url "https://github.com/k1LoW/tsplt/releases/download/v0.2.1/tsplt_v0.2.1_darwin_amd64.zip"
+    sha256 "85d5af0321b7818da1b85583d68e24a46632847251c3c4cc718aefc4499a2888"
   elsif OS.linux?
-    url "https://github.com/k1LoW/tsplt/releases/download/v0.2.0/tsplt_v0.2.0_linux_amd64.tar.gz"
-    sha256 "405f6271b94ed07803df43f8018758d6b561624e9338663443bf8de2c0eca12d"
+    url "https://github.com/k1LoW/tsplt/releases/download/v0.2.1/tsplt_v0.2.1_linux_amd64.tar.gz"
+    sha256 "fafe745b11417d99cf058eef0c32d7caa33383d68a627eb2b0dffc91a2a03780"
   end
 
   def install
