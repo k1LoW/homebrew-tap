@@ -2,15 +2,15 @@
 class Filt < Formula
   desc "filt is a interactive/realtime stream filter."
   homepage "https://github.com/k1LoW/filt"
-  version "0.4.0"
+  version "0.5.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/filt/releases/download/v0.4.0/filt_v0.4.0_darwin_amd64.zip"
-    sha256 "a9d0978431f41814e77bb566f3b57de34a19738ec77e0e68a55c5fb31e8f63f8"
+    url "https://github.com/k1LoW/filt/releases/download/v0.5.0/filt_v0.5.0_darwin_amd64.zip"
+    sha256 "ce24cc8e30f5c4ddbde06ece9940b6f6719f685226b80d2e37b473e76b420fe6"
   elsif OS.linux?
-    url "https://github.com/k1LoW/filt/releases/download/v0.4.0/filt_v0.4.0_linux_amd64.tar.gz"
-    sha256 "fb400da3f086c1584e3a06fb25d4565605bf5b433342c89c2d1b0e2aa346f03d"
+    url "https://github.com/k1LoW/filt/releases/download/v0.5.0/filt_v0.5.0_linux_amd64.tar.gz"
+    sha256 "cc0eb24a22c0a830b8c5dcec358cf9e0dc43608aa4404ae3c06ee63ed77c0169"
   end
 
   def install
