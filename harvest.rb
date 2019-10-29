@@ -2,14 +2,14 @@
 class Harvest < Formula
   desc "Portable log aggregation tool for middle-scale system operation/observation."
   homepage "https://github.com/k1LoW/harvest"
-  version "0.15.3"
+  version "0.16.1"
 
   if OS.mac?
-    url "https://github.com/k1LoW/harvest/releases/download/v0.15.3/harvest_v0.15.3_darwin_amd64.zip"
-    sha256 "af904255e59204f8654828b42eb3377580a8e449e9c722a9e021748c19f3c87f"
+    url "https://github.com/k1LoW/harvest/releases/download/v0.16.1/harvest_v0.16.1_darwin_amd64.zip"
+    sha256 "419299a9680301254b2ca0805909f048ea548127e523c9f69221b5d8b882875f"
   elsif OS.linux?
-    url "https://github.com/k1LoW/harvest/releases/download/v0.15.3/harvest_v0.15.3_linux_amd64.tar.gz"
-    sha256 "7d9ccf1fa5c0c81780bfbafd726ed4cb45c12c4513a527e5f62fb96317fd76ef"
+    url "https://github.com/k1LoW/harvest/releases/download/v0.16.1/harvest_v0.16.1_linux_amd64.tar.gz"
+    sha256 "68f40365586d82091fce3593cfb990dab99cfe89e94643771096a5db140cea11"
   end
 
   def install
