@@ -2,14 +2,15 @@
 class Evry < Formula
   desc "`evry` split STDIN stream and execute specified command **every** N lines/seconds."
   homepage "https://github.com/k1LoW/evry"
-  version "0.2.2"
+  version "0.2.3"
+  bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/evry/releases/download/v0.2.2/evry_v0.2.2_darwin_amd64.zip"
-    sha256 "3c742a4e8dae7d1e4f9d18b8e6980d4bfc7e9deba06455d75290a43291b6b1d3"
+    url "https://github.com/k1LoW/evry/releases/download/v0.2.3/evry_v0.2.3_darwin_amd64.zip"
+    sha256 "f8319f982582388ca01fa348e4e1efdae63047d909f772f829fb1326b2713eb1"
   elsif OS.linux?
-    url "https://github.com/k1LoW/evry/releases/download/v0.2.2/evry_v0.2.2_linux_amd64.tar.gz"
-    sha256 "86a429dd2c9d9276588a6be9f9c0d4ee0383e40b356e4a32729ff4c3e71dea6b"
+    url "https://github.com/k1LoW/evry/releases/download/v0.2.3/evry_v0.2.3_linux_amd64.tar.gz"
+    sha256 "fbc598a65473c8274712bc141ff7bba67ad33a1a21a54f45e2bb8742a8474c5b"
   end
 
   def install
