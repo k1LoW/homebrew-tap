@@ -16,8 +16,8 @@ class Harvest < Formula
   end
 
   def install
-    system 'hrv', 'completion', 'bash', '--out', 'hrv.bash'
-    system 'hrv', 'completion', 'zsh', '--out', 'hrv.zsh'
+    system './hrv', 'completion', 'bash', '--out', 'hrv.bash'
+    system './hrv', 'completion', 'zsh', '--out', 'hrv.zsh'
     bin.install 'hrv'
     bash_completion.install "hrv.bash" => "hrv"
     zsh_completion.install "hrv.zsh" => "_hrv"
