@@ -2,20 +2,24 @@
 class Harvest < Formula
   desc "Portable log aggregation tool for middle-scale system operation/observation."
   homepage "https://github.com/k1LoW/harvest"
-  version "0.16.2"
+  version "0.17.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/harvest/releases/download/v0.16.2/harvest_v0.16.2_darwin_amd64.zip"
-    sha256 "8fd3d81dc4f80e3f53e2935507b4520029ae631b85d9c8616a877fc45edfc98a"
+    url "https://github.com/k1LoW/harvest/releases/download/v0.17.0/harvest_v0.17.0_darwin_amd64.zip"
+    sha256 "5127081d665304ebac98e5ec16e50036574ccb89b60813074f7a80f0b8ea4f0e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/harvest/releases/download/v0.16.2/harvest_v0.16.2_linux_amd64.tar.gz"
-      sha256 "e4c454256ed3631c86d87e98500c8b998a96a8835444ee91a94490728b8ffebe"
+      url "https://github.com/k1LoW/harvest/releases/download/v0.17.0/harvest_v0.17.0_linux_amd64.tar.gz"
+      sha256 "4014062d3aab55c385239b81d8f7302d3d1e87c704b19f56701e7b51dba2123c"
     end
   end
 
   def install
+    system 'hrv', 'completion', 'bash', '--out', 'hrv.bash'
+    system 'hrv', 'completion', 'zsh', '--out', 'hrv.zsh'
     bin.install 'hrv'
+    bash_completion.install "hrv.bash" => "hrv"
+    zsh_completion.install "hrv.zsh" => "_hrv"
   end
 end
