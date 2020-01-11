@@ -2,18 +2,24 @@
 class Metr < Formula
   desc "metr gets system metrics."
   homepage "https://github.com/k1LoW/metr"
-  version "0.9.1"
+  version "0.10.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/metr/releases/download/v0.9.1/metr_v0.9.1_darwin_amd64.zip"
-    sha256 "6fa41506a2a280c64f3056fb64e38d76986dd13ca1d47aabf976cc70e19f12b1"
+    url "https://github.com/k1LoW/metr/releases/download/v0.10.0/metr_v0.10.0_darwin_amd64.zip"
+    sha256 "63e546bba74bda0f13de3e0f04524498fc8cfc8b558013ab1720b76e215f1cac"
   elsif OS.linux?
-    url "https://github.com/k1LoW/metr/releases/download/v0.9.1/metr_v0.9.1_linux_amd64.tar.gz"
-    sha256 "9e129fc109a71c2e4decef1989a9082804bcf5a961d9a3bb6499664c0f02daae"
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/metr/releases/download/v0.10.0/metr_v0.10.0_linux_amd64.tar.gz"
+      sha256 "d296babc2dfc8775be144bb4a433797b5ac9dec2be7037d0df034e9ed92366d2"
+    end
   end
 
   def install
+    system './metr', 'completion', 'bash', '--out', 'metr.bash'
+    system './metr', 'completion', 'zsh', '--out', 'metr.zsh'
     bin.install 'metr'
+    bash_completion.install 'metr.bash' => 'metr'
+    zsh_completion.install 'metr.zsh' => '_metr'
   end
 end
