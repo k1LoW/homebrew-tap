@@ -2,12 +2,12 @@
 class Connected < Formula
   desc "Check your MacBook power cable connection."
   homepage "https://github.com/k1LoW/connected"
-  version "0.3.0"
+  version "0.4.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/connected/releases/download/v0.3.0/connected_v0.3.0_darwin_amd64.zip"
-    sha256 "ec0b8303844ba26be081c9f642d2cd16cbb11198672478fb9b7768fafdf6b717"
+    url "https://github.com/k1LoW/connected/releases/download/v0.4.0/connected_v0.4.0_darwin_amd64.zip"
+    sha256 "0d7e1291dea513ff9d56dd1ad7bc4d221e79ff95473817ac2668a60b7d25ebdd"
   elsif OS.linux?
   end
 
