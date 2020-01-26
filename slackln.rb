@@ -2,20 +2,24 @@
 class Slackln < Formula
   desc "Println(Slack)."
   homepage "https://github.com/k1LoW/slackln"
-  version "0.1.0"
+  version "0.2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/slackln/releases/download/v0.1.0/slackln_v0.1.0_darwin_amd64.zip"
-    sha256 "c6b7969423db4e242a7731e5cede00948cc19f56c331a4fd93397ff6d2130c7e"
+    url "https://github.com/k1LoW/slackln/releases/download/v0.2.0/slackln_v0.2.0_darwin_amd64.zip"
+    sha256 "a49f53fbf2d5872071d8dfedc0020d44454f06308e8b247e3add2e675753e53c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/slackln/releases/download/v0.1.0/slackln_v0.1.0_linux_amd64.tar.gz"
-      sha256 "ea637ad039b3be0a2bcae690787af36a5b1fe7db3cd42d6b8f9232bfe42088ef"
+      url "https://github.com/k1LoW/slackln/releases/download/v0.2.0/slackln_v0.2.0_linux_amd64.tar.gz"
+      sha256 "1a6332cd7a60d6493445683103b6ed512e6dfd09f9fd48b639bdbc89c24bc03d"
     end
   end
 
   def install
+    system './slackln', 'completion', 'bash', '--out', 'slackln.bash'
+    system './slackln', 'completion', 'zsh', '--out', 'slackln.zsh'
     bin.install 'slackln'
+    bash_completion.install 'slackln.bash' => 'slackln'
+    zsh_completion.install 'slackln.zsh' => '_slackln'
   end
 end
