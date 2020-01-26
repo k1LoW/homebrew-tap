@@ -2,16 +2,16 @@
 class Slackln < Formula
   desc "Println(Slack)."
   homepage "https://github.com/k1LoW/slackln"
-  version "0.2.0"
+  version "0.2.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/slackln/releases/download/v0.2.0/slackln_v0.2.0_darwin_amd64.zip"
-    sha256 "a49f53fbf2d5872071d8dfedc0020d44454f06308e8b247e3add2e675753e53c"
+    url "https://github.com/k1LoW/slackln/releases/download/v0.2.1/slackln_v0.2.1_darwin_amd64.zip"
+    sha256 "0ac236529c509e1ece1ac96a00c5e9932fe2b387fdebde1163eb7af3a4884b8f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/slackln/releases/download/v0.2.0/slackln_v0.2.0_linux_amd64.tar.gz"
-      sha256 "1a6332cd7a60d6493445683103b6ed512e6dfd09f9fd48b639bdbc89c24bc03d"
+      url "https://github.com/k1LoW/slackln/releases/download/v0.2.1/slackln_v0.2.1_linux_amd64.tar.gz"
+      sha256 "d176a463a7025b3ab3efaa82cb333f5e57b8fcdd3daa1641667da64ebe7c1d5f"
     end
   end
 
