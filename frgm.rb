@@ -1,16 +1,16 @@
 class Frgm < Formula
   desc "frgm is a command snippets (fragments) manager."
   homepage "https://github.com/k1LoW/frgm"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/frgm/releases/download/v0.0.1/frgm_v0.0.1_darwin_amd64.zip"
-    sha256 "8bf3eb7f27ea95c516dfaa050aa17b40c5ec9c2507cd5f8bea8782255efd6a3d"
+    url "https://github.com/k1LoW/frgm/releases/download/v0.0.2/frgm_v0.0.2_darwin_amd64.zip"
+    sha256 "8998bb98b4e77dee2a614fa0cac53289757957a4a923883d96b6cb8a6358e7ec"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/frgm/releases/download/v0.0.1/frgm_v0.0.1_linux_amd64.tar.gz"
-      sha256 "9cdd3e71c2f76c719d7fb8f6c39f9c90dbdf405d5e2e57543f2cc45ce1b7bd1b"
+      url "https://github.com/k1LoW/frgm/releases/download/v0.0.2/frgm_v0.0.2_linux_amd64.tar.gz"
+      sha256 "9cd8537e6cbf2bf2ce940eb94f9f71ccd1dab7150696f82b7b5b1469526d0e87"
     end
   end
 
@@ -22,5 +22,3 @@ class Frgm < Formula
     zsh_completion.install 'frgm.zsh' => '_frgm'
   end
 end
-
-
