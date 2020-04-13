@@ -2,16 +2,16 @@
 class Tbls < Formula
   desc "tbls is a CI-Friendly tool for document a database, written in Go."
   homepage "https://github.com/k1LoW/tbls"
-  version "1.31.0"
+  version "1.31.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/tbls/releases/download/v1.31.0/tbls_v1.31.0_darwin_amd64.zip"
-    sha256 "9f4ea6c167feb3e65e902c7401bd857ee76529700b66d9b2e94f8261a41a2219"
+    url "https://github.com/k1LoW/tbls/releases/download/v1.31.1/tbls_v1.31.1_darwin_amd64.zip"
+    sha256 "98a2d0ddbf3713601d0d3d4153a63be3c5fc8b86ee43f3bcb0a051816649e978"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.31.0/tbls_v1.31.0_linux_amd64.tar.gz"
-      sha256 "1e0fe954dfd9d275a0ad7fa3f41d698f5e54de6e694d98a55452a58beadadee3"
+      url "https://github.com/k1LoW/tbls/releases/download/v1.31.1/tbls_v1.31.1_linux_amd64.tar.gz"
+      sha256 "ea33e133dd4a0495491412d24d9fdf9e86fd7d9adf89b154ca6c8fce26fcb73a"
     end
   end
 
