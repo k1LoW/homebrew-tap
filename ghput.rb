@@ -2,16 +2,16 @@
 class Ghput < Formula
   desc "ghput is a CI-Friendly tool for put comment on GitHub."
   homepage "https://github.com/k1LoW/ghput"
-  version "0.1.0"
+  version "0.2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/ghput/releases/download/v0.1.0/ghput_v0.1.0_darwin_amd64.zip"
-    sha256 "a4af165421b75bf0d062c42621c77a53e9e327f0e2442913c1c8a5df19792d0d"
+    url "https://github.com/k1LoW/ghput/releases/download/v0.2.0/ghput_v0.2.0_darwin_amd64.zip"
+    sha256 "d9b1fdf5d65d3090412a2968197deeb449983fb7ee608d60893ff0bdaa48ea94"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ghput/releases/download/v0.1.0/ghput_v0.1.0_linux_amd64.tar.gz"
-      sha256 "e1e8c949d13e5505f0de9bfb50ec214f76034a3689d276277019b969823e7818"
+      url "https://github.com/k1LoW/ghput/releases/download/v0.2.0/ghput_v0.2.0_linux_amd64.tar.gz"
+      sha256 "20d34d05a3423809f07c1974cfb55a1aa96f5514f84df10eb2728c53bd7a7055"
     end
   end
 
