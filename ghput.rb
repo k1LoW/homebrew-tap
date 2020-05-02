@@ -2,16 +2,16 @@
 class Ghput < Formula
   desc "ghput is a CI-friendly tool that puts * on GitHub."
   homepage "https://github.com/k1LoW/ghput"
-  version "0.5.0"
+  version "0.5.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/ghput/releases/download/v0.5.0/ghput_v0.5.0_darwin_amd64.zip"
-    sha256 "6efcae3fa77a88ee55aef69af9cd7e284418876a632c6a6da8e4a211203a0a7b"
+    url "https://github.com/k1LoW/ghput/releases/download/v0.5.1/ghput_v0.5.1_darwin_amd64.zip"
+    sha256 "2fff24a81e681fe029733b35494cbb67905cf85df7dcfea514c1e8fc400bf14e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ghput/releases/download/v0.5.0/ghput_v0.5.0_linux_amd64.tar.gz"
-      sha256 "c0bff5e3c7a3cfb98ea514558f7bdba58decf777281c2a6059f11f3e11dc0438"
+      url "https://github.com/k1LoW/ghput/releases/download/v0.5.1/ghput_v0.5.1_linux_amd64.tar.gz"
+      sha256 "7428f1918da39610e4cd01edd5bfb67e4e46669f7affcd34e314e4035024d751"
     end
   end
 
