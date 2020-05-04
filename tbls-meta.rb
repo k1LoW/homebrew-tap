@@ -2,18 +2,20 @@
 class TblsMeta < Formula
   desc "tbls-meta is a CI-friendly tool for applying metadata managed by tbls to the datasource."
   homepage "https://github.com/k1LoW/tbls-meta"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/tbls-meta/releases/download/v0.1.0/tbls-meta_v0.1.0_darwin_amd64.zip"
-    sha256 "89be666a955833747b84555ff20362a821b3c7eab1cd0941ff37740f911442c4"
+    url "https://github.com/k1LoW/tbls-meta/releases/download/v0.1.1/tbls-meta_v0.1.1_darwin_amd64.zip"
+    sha256 "b3ce19354ca1cf3fa66c8465676a0fc00da9794fcc3167e9bdd19a35a991f2a7"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/tbls-meta/releases/download/v0.1.0/tbls-meta_v0.1.0_linux_amd64.tar.gz"
-      sha256 "198a9934e5b0a5d897ad1e2cf54be6da14550d134d51a3b07ec5760de0c28beb"
+      url "https://github.com/k1LoW/tbls-meta/releases/download/v0.1.1/tbls-meta_v0.1.1_linux_amd64.tar.gz"
+      sha256 "df14648126c69ceb5d1772194253725c04135e71bd9fdd64091fe29a362d7ad2"
     end
   end
+  
+  depends_on "tbls"
 
   def install
     system './tbls-meta', 'completion', 'bash', '--out', 'tbls-meta.bash'
