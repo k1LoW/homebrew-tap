@@ -2,18 +2,24 @@
 class Filt < Formula
   desc "filt is a interactive/realtime stream filter."
   homepage "https://github.com/k1LoW/filt"
-  version "0.6.0"
+  version "0.6.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/filt/releases/download/v0.6.0/filt_v0.6.0_darwin_amd64.zip"
-    sha256 "52e55a719b76060ca9bdb88ac8e9c4b19f66e68f07dc27229463a30a3c40a5bc"
+    url "https://github.com/k1LoW/filt/releases/download/v0.6.1/filt_v0.6.1_darwin_amd64.zip"
+    sha256 "74842116d8dd7c828633b785e0e03718a29ee060f9b4a471ac7495d1dca6e25e"
   elsif OS.linux?
-    url "https://github.com/k1LoW/filt/releases/download/v0.6.0/filt_v0.6.0_linux_amd64.tar.gz"
-    sha256 "9e9c744a5e6e26eaeaf1ae7e99f5886d34334b05b1b21cba90139d4c2026948e"
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/filt/releases/download/v0.6.1/filt_v0.6.1_linux_amd64.tar.gz"
+      sha256 "8c0a002cd8127c8b3c012b7829f116c58ad942df1ad09b64c4a765f0c1d10c4d"
+    end
   end
 
   def install
+    system './filt', 'completion', 'bash', '--out', 'filt.bash'
+    system './filt', 'completion', 'zsh', '--out', 'filt.zsh'
     bin.install 'filt'
+    bash_completion.install 'filt.bash' => 'filt'
+    zsh_completion.install 'filt.zsh' => '_filt'
   end
 end
