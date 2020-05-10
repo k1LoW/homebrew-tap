@@ -7,11 +7,11 @@ class Tbls < Formula
 
   if OS.mac?
     url "https://github.com/k1LoW/tbls/releases/download/v1.38.1/tbls_v1.38.1_darwin_amd64.zip"
-    sha256 "ad0abaa83c32823fa94a6709119c3bc6b5d0f94f44e4038d49b218c699e9bc22"
+    sha256 "e605d849a390ca7724ad8ef851ed2f793c1b31cb9c4f9f87b330d8a44410a10f"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/tbls/releases/download/v1.38.1/tbls_v1.38.1_linux_amd64.tar.gz"
-      sha256 "f39c908c05ca6abe40b38e1bea3beb5ac15e3ffc2ae7ef3b38af505b9aef80c5"
+      sha256 "887ee653363647ad43e76dee3f31bbfe28eba3bc9f36c46034931e2ff21ffaa1"
     end
   end
 
