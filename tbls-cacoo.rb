@@ -2,16 +2,16 @@
 class TblsCacoo < Formula
   desc "tbls-cacoo is an external subcommand of tbls for Cacoo."
   homepage "https://github.com/k1LoW/tbls-cacoo"
-  version "0.1.0"
+  version "0.2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/tbls-cacoo/releases/download/v0.1.0/tbls-cacoo_v0.1.0_darwin_amd64.zip"
-    sha256 "94ee3b8b4ef1b4aef73f9e895b97b3afddfb43ef32c1cffb8b4ec2acbb8c9a66"
+    url "https://github.com/k1LoW/tbls-cacoo/releases/download/v0.2.0/tbls-cacoo_v0.2.0_darwin_amd64.zip"
+    sha256 "a330037babef578e1211dbc027e3fe5a6bc5ff52527eb51bb5d0558b3601f67f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/tbls-cacoo/releases/download/v0.1.0/tbls-cacoo_v0.1.0_linux_amd64.tar.gz"
-      sha256 "a98808792acc2e48ffb89b983e8ddf5cf72a3cd6d670c9c3d36ab3707631f8b1"
+      url "https://github.com/k1LoW/tbls-cacoo/releases/download/v0.2.0/tbls-cacoo_v0.2.0_linux_amd64.tar.gz"
+      sha256 "b062386fb0f1c5bbad0cd0bed73a373d4c38e5230fe67a0b3b6d0124209bef0d"
     end
   end
   
