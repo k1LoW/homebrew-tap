@@ -2,16 +2,16 @@
 class Lrep < Formula
   desc "line regular expression parser"
   homepage "https://github.com/k1LoW/lrep"
-  version "0.2.0"
+  version "0.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/lrep/releases/download/v0.2.0/lrep_v0.2.0_darwin_amd64.zip"
-    sha256 "6fbc9e4970cc93f8c1b1e5ce65363c18bbbd26841df83e0749fab9b8c1777a2d"
+    url "https://github.com/k1LoW/lrep/releases/download/v0.3.0/lrep_v0.3.0_darwin_amd64.zip"
+    sha256 "1fbb17602ca15acf1e1c6f55485c2dfb5e50a952460b4aab9b189ddcd2319bd5"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/lrep/releases/download/v0.2.0/lrep_v0.2.0_linux_amd64.tar.gz"
-      sha256 "86c30e94fdada24e0249c4b650a4e2d4974561f00e73cdfdba8c2476e3cc659c"
+      url "https://github.com/k1LoW/lrep/releases/download/v0.3.0/lrep_v0.3.0_linux_amd64.tar.gz"
+      sha256 "b188948379ad8094c6acbb9c4cc8d4fe52a8b78892c4f5d211af6c73f7ca8697"
     end
   end
 
