@@ -2,16 +2,16 @@
 class Frgm < Formula
   desc "frgm is a meta snippet (fragment) manager."
   homepage "https://github.com/k1LoW/frgm"
-  version "0.8.3"
+  version "0.8.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/frgm/releases/download/v0.8.3/frgm_v0.8.3_darwin_amd64.zip"
-    sha256 "d56929f20a70c2282f57d1bea544dbf39216969db28216e8716f8818a8a8295e"
+    url "https://github.com/k1LoW/frgm/releases/download/v0.8.4/frgm_v0.8.4_darwin_amd64.zip"
+    sha256 "343e9d6ab3c24e4b0c76025d660b406376d5369bc918a4f98902ca633f795c3d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/frgm/releases/download/v0.8.3/frgm_v0.8.3_linux_amd64.tar.gz"
-      sha256 "113d24c1152338117ba16e68aec9e140bf8ad4d2466de7364894a883e59d0e07"
+      url "https://github.com/k1LoW/frgm/releases/download/v0.8.4/frgm_v0.8.4_linux_amd64.tar.gz"
+      sha256 "e94df8780b69f31cf9b6cad0ddd64b4aee61104851aa1ac0751b40f9d09f3f68"
     end
   end
 
