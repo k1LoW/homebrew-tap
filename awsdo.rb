@@ -2,16 +2,16 @@
 class Awsdo < Formula
   desc "AWS temporary credential (aka session token) wrapper."
   homepage "https://github.com/k1LoW/awsdo"
-  version "0.1.0"
+  version "0.2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/awsdo/releases/download/v0.1.0/awsdo_v0.1.0_darwin_amd64.zip"
-    sha256 "97152d0c28efc646df01b31cea492520a9b158c011673ab475218c6bfdf522ec"
+    url "https://github.com/k1LoW/awsdo/releases/download/v0.2.0/awsdo_v0.2.0_darwin_amd64.zip"
+    sha256 "0864c189122b21f5493f68861ae8dc8c53262fb4e483660dc5af373c688c5385"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/awsdo/releases/download/v0.1.0/awsdo_v0.1.0_linux_amd64.tar.gz"
-      sha256 "2106ba04e0f6ae10c8133a11ed0ed7f3c79d100e7dc38bb6bb6b589958c3f8e6"
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.2.0/awsdo_v0.2.0_linux_amd64.tar.gz"
+      sha256 "4713b69b6679f930efa708d3963df6b994098129050dbe7332501c612188f75b"
     end
   end
 
