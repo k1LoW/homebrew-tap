@@ -7,11 +7,11 @@ class Awsdo < Formula
 
   if OS.mac?
     url "https://github.com/k1LoW/awsdo/releases/download/v0.5.0/awsdo_v0.5.0_darwin_amd64.zip"
-    sha256 "012169baf2034625a932c3c29c60b90c69f9a922a8fc5dc25df054a2a560202f"
+    sha256 "4cdedc28d51003a1b0f339adee5b27230614591247fdde3b31db5955739c3df9"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/awsdo/releases/download/v0.5.0/awsdo_v0.5.0_linux_amd64.tar.gz"
-      sha256 "e94d6bba6663992f08342ca3df38c4c795f417d7f69f83ca3df97982cd346300"
+      sha256 "b159d3b5b00b280ea3aabc9841a5ceaeaf25c09cdb52a30e2019a3e0f04895e9"
     end
   end
 
