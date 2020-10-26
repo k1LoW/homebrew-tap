@@ -2,16 +2,16 @@
 class Awsdo < Formula
   desc "awsdo is a tool to do anything using AWS temporary credentials."
   homepage "https://github.com/k1LoW/awsdo"
-  version "0.5.0"
+  version "0.6.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/awsdo/releases/download/v0.5.0/awsdo_v0.5.0_darwin_amd64.zip"
-    sha256 "4cdedc28d51003a1b0f339adee5b27230614591247fdde3b31db5955739c3df9"
+    url "https://github.com/k1LoW/awsdo/releases/download/v0.6.0/awsdo_v0.6.0_darwin_amd64.zip"
+    sha256 "c272afa0fb6af38e5d22f88ec19e073d7feecce0e626c89565c04f5c5dc0cbac"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/awsdo/releases/download/v0.5.0/awsdo_v0.5.0_linux_amd64.tar.gz"
-      sha256 "b159d3b5b00b280ea3aabc9841a5ceaeaf25c09cdb52a30e2019a3e0f04895e9"
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.6.0/awsdo_v0.6.0_linux_amd64.tar.gz"
+      sha256 "ea6a89bd8f6aae8dbd40d9bbcc6e391660fd686257ba2c2ccc7cd9616337289b"
     end
   end
 
