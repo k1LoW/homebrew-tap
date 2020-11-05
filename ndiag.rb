@@ -2,16 +2,16 @@
 class Ndiag < Formula
   desc "ndiag is a high-level architecture diagramming/documentation tool."
   homepage "https://github.com/k1LoW/ndiag"
-  version "0.5.0"
+  version "0.6.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/ndiag/releases/download/v0.5.0/ndiag_v0.5.0_darwin_amd64.zip"
-    sha256 "46efc34f8cc5cd941162b900795c996e587e876684ecff17f8ee209621beb43e"
+    url "https://github.com/k1LoW/ndiag/releases/download/v0.6.0/ndiag_v0.6.0_darwin_amd64.zip"
+    sha256 "1411cd043e29144581b021ed77163c2947ca63d506ed53bb1c436658b34668ee"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ndiag/releases/download/v0.5.0/ndiag_v0.5.0_linux_amd64.tar.gz"
-      sha256 "6ea839da2beb28823298509192295659350585b2d930b33cb7c6787dbe9e0599"
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.6.0/ndiag_v0.6.0_linux_amd64.tar.gz"
+      sha256 "a16911c5d5cda5bf56a71c740c9588e8462a8ced10de8696917dfe77ea9d05e5"
     end
   end
 
