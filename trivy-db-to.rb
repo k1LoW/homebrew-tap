@@ -2,16 +2,16 @@
 class TrivyDbTo < Formula
   desc "trivy-db-to is a tool for migrating/converting vulnerability information from Trivy DB to other datasource."
   homepage "https://github.com/k1LoW/trivy-db-to"
-  version "0.2.0"
+  version "0.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/trivy-db-to/releases/download/v0.2.0/trivy-db-to_v0.2.0_darwin_amd64.zip"
-    sha256 "d672dd71b3f877e8a1932929671b8e77533db512d7ab46bad941b85814b9df34"
+    url "https://github.com/k1LoW/trivy-db-to/releases/download/v0.3.0/trivy-db-to_v0.3.0_darwin_amd64.zip"
+    sha256 "af772b22b6d2bd8eccbf2dd4667f09763dd397f6cf43cdb61a34efe204ead4d9"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/trivy-db-to/releases/download/v0.2.0/trivy-db-to_v0.2.0_linux_amd64.tar.gz"
-      sha256 "64e33fe9a9689895f9a496c9cfedce4f0d5e2d8aa01067aadc63ffd19ff3a186"
+      url "https://github.com/k1LoW/trivy-db-to/releases/download/v0.3.0/trivy-db-to_v0.3.0_linux_amd64.tar.gz"
+      sha256 "5e35adc980eca71030b99dc6de15897e8ebdddf9c1b2c6fd7c9f4cafce0b5ff0"
     end
   end
 
