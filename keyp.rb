@@ -2,16 +2,16 @@
 class Keyp < Formula
   desc "keyp is a tool to keep public keys up to date."
   homepage "https://github.com/k1LoW/keyp"
-  version "0.5.0"
+  version "0.6.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/k1LoW/keyp/releases/download/v0.5.0/keyp_v0.5.0_darwin_amd64.zip"
-    sha256 "4230193bc99d6d2608af3d60d8d2e631e0114bc5cec0cac0edb7eec9e30a48a4"
+    url "https://github.com/k1LoW/keyp/releases/download/v0.6.0/keyp_v0.6.0_darwin_amd64.zip"
+    sha256 "5f79c1b60e4630bc6069882fbc3a9d7e08441441e7de5d85b3796067dfaf08e2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/keyp/releases/download/v0.5.0/keyp_v0.5.0_linux_amd64.tar.gz"
-      sha256 "1ecff97a52e0dcb2baf86f9e5685d667eba094d3d175c5c11c8b7d810cee9dca"
+      url "https://github.com/k1LoW/keyp/releases/download/v0.6.0/keyp_v0.6.0_linux_amd64.tar.gz"
+      sha256 "cbe3e32b3e1b74ea3e576b4e28bdf6b88fab3579ea394669ad1a474291038d54"
     end
   end
 
