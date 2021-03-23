@@ -5,17 +5,17 @@
 class Ghdag < Formula
   desc "ghdag is a tiny workflow engine for GitHub issue and pull request."
   homepage "https://github.com/k1LoW/ghdag"
-  version "0.13.1"
+  version "0.14.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/ghdag/releases/download/v0.13.1/ghdag_v0.13.1_darwin_amd64.zip"
-    sha256 "5397ffe1f2127ae75a9f357cbcdd08adda36e65b5373f83c641c05076c5bd43b"
+    url "https://github.com/k1LoW/ghdag/releases/download/v0.14.0/ghdag_v0.14.0_darwin_amd64.zip"
+    sha256 "4a4ffcc43950a1ab7bdecc8469bc13b03af531094709e5cdc1aa74066ef09ec8"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/ghdag/releases/download/v0.13.1/ghdag_v0.13.1_linux_amd64.tar.gz"
-    sha256 "a927a44d66595918d5c3ee40909af05d9d9aecb4c0e0ecd650a926fd9ce202d7"
+    url "https://github.com/k1LoW/ghdag/releases/download/v0.14.0/ghdag_v0.14.0_linux_amd64.tar.gz"
+    sha256 "cf55dd21220a0c93e5224757f5a147693a0143e1b22f17a24e3fdc6d3b29da7b"
   end
 
   def install
