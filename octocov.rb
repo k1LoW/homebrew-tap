@@ -5,22 +5,22 @@
 class Octocov < Formula
   desc "octocov is a tool for collecting code coverage."
   homepage "https://github.com/k1LoW/octocov"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/octocov/releases/download/v0.1.0/octocov_v0.1.0_darwin_amd64.zip"
-    sha256 "3ec14e91011058d6dcf64c4b7aab8de4aa133d00254a970c3cce6ac9f23598a2"
+    url "https://github.com/k1LoW/octocov/releases/download/v0.1.1/octocov_v0.1.1_darwin_amd64.zip"
+    sha256 "2d8f783b46090a4ef038d21be56308b5b273c4dcd86f07162226d46eeaab0b72"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/octocov/releases/download/v0.1.0/octocov_v0.1.0_linux_amd64.tar.gz"
-    sha256 "085469699f630894ddb833276d0613bb856bbd9461e80b08ab6adb7fa1b90528"
+    url "https://github.com/k1LoW/octocov/releases/download/v0.1.1/octocov_v0.1.1_linux_amd64.tar.gz"
+    sha256 "114cd90a31c5e5b171633f750eea947ded4488de6a41006b051d385df78f1930"
   end
 
   def install
-    system './octocov', 'completion', 'bash', '>', 'octocov.bash'
-    system './octocov', 'completion', 'zsh', '>', 'octocov.zsh'
+    system './octocov', 'completion', 'bash', 'octocov.bash'
+    system './octocov', 'completion', 'zsh', 'octocov.zsh'
     bin.install 'octocov'
     bash_completion.install 'octocov.bash' => 'octocov'
     zsh_completion.install 'octocov.zsh' => '_octocov'
