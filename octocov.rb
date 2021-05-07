@@ -5,17 +5,17 @@
 class Octocov < Formula
   desc "octocov is a tool for collecting code coverage."
   homepage "https://github.com/k1LoW/octocov"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/octocov/releases/download/v0.1.1/octocov_v0.1.1_darwin_amd64.zip"
-    sha256 "2d8f783b46090a4ef038d21be56308b5b273c4dcd86f07162226d46eeaab0b72"
+    url "https://github.com/k1LoW/octocov/releases/download/v0.2.0/octocov_v0.2.0_darwin_amd64.zip"
+    sha256 "1627773352fc215bee106bb0a9701a4db340f94c5193e6b0b2eb24d9aeffbbde"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/octocov/releases/download/v0.1.1/octocov_v0.1.1_linux_amd64.tar.gz"
-    sha256 "114cd90a31c5e5b171633f750eea947ded4488de6a41006b051d385df78f1930"
+    url "https://github.com/k1LoW/octocov/releases/download/v0.2.0/octocov_v0.2.0_linux_amd64.tar.gz"
+    sha256 "4f1b9d032ffef8f56b184a791d7f6c420235affb9d86f5b5d1ec891387037309"
   end
 
   def install
