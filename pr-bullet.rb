@@ -5,17 +5,17 @@
 class PrBullet < Formula
   desc "pr-bullet is a tool for copying pull request to multiple repositories."
   homepage "https://github.com/k1LoW/pr-bullet"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/pr-bullet/releases/download/v0.2.1/pr-bullet_v0.2.1_darwin_amd64.zip"
-    sha256 "579ffa4973cb4986704e74a5af86586d80955a1821244e3a20d285c19cfd1125"
+    url "https://github.com/k1LoW/pr-bullet/releases/download/v0.3.0/pr-bullet_v0.3.0_darwin_amd64.zip"
+    sha256 "87e33f1d67855dd62dd25b0d7baac65d9e52759b60c5ad58febda8f70b8415ec"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/pr-bullet/releases/download/v0.2.1/pr-bullet_v0.2.1_linux_amd64.tar.gz"
-    sha256 "49a09c2a663a5222bbac5cd8427b001649488006fb25fc2661bb82da0cb5bdad"
+    url "https://github.com/k1LoW/pr-bullet/releases/download/v0.3.0/pr-bullet_v0.3.0_linux_amd64.tar.gz"
+    sha256 "442d7ce0e4738963a4f68ce2db32ab68bc9caf2d28f3cc729dafd2f1e5c9b2c6"
   end
 
   def install
