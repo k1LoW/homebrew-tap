@@ -5,21 +5,21 @@
 class PrRevert < Formula
   desc "pr-revert is a tool for reverting pull requests."
   homepage "https://github.com/k1LoW/pr-revert"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/pr-revert/releases/download/v0.2.0/pr-revert_v0.2.0_darwin_amd64.zip"
-      sha256 "9237dc87d043b135e6e50f4c98c0445ea0605623140f567495c8afd50d37a0d8"
+      url "https://github.com/k1LoW/pr-revert/releases/download/v0.2.1/pr-revert_v0.2.1_darwin_amd64.zip"
+      sha256 "614e0caf774430451710fc157c1072f724628397072075cb3a8ffbc99c09832f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/pr-revert/releases/download/v0.2.0/pr-revert_v0.2.0_linux_amd64.tar.gz"
-      sha256 "1a7f9bb05b54e29c7537222b79e9c730d541ed6f6e048b1bf0ac4979c6f0aa7f"
+      url "https://github.com/k1LoW/pr-revert/releases/download/v0.2.1/pr-revert_v0.2.1_linux_amd64.tar.gz"
+      sha256 "cb7242cdacd8ba50570d39b76f650fb55b6b5e3cf34078e9a654daa55b1f8776"
     end
   end
 
