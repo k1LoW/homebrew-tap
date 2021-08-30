@@ -5,21 +5,21 @@
 class Oshka < Formula
   desc "oshka is a tool for extracting nested CI/CD supply chains and executing commands."
   homepage "https://github.com/k1LoW/oshka"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/oshka/releases/download/v0.2.0/oshka_v0.2.0_darwin_amd64.zip"
-      sha256 "4f7454e176d6bfd73d746d8297cb66da6b04f72c990b258b34b6088cc5334260"
+      url "https://github.com/k1LoW/oshka/releases/download/v0.3.0/oshka_v0.3.0_darwin_amd64.zip"
+      sha256 "e51dd0800262ebff192c70d3d0327f2943c458e314cc9a8f8e3ddc0528faf246"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/oshka/releases/download/v0.2.0/oshka_v0.2.0_linux_amd64.tar.gz"
-      sha256 "902f2a53f96ffcb4144c1a452ca632945bdcb56ad7944527d03f46b2f9323d11"
+      url "https://github.com/k1LoW/oshka/releases/download/v0.3.0/oshka_v0.3.0_linux_amd64.tar.gz"
+      sha256 "8edb240bf7a1757f704b3b96ccd110316eb03f029910738ee19864276c633e48"
     end
   end
 
