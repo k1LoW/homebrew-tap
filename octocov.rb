@@ -24,10 +24,10 @@ class Octocov < Formula
   end
 
   def install
-    system './octocov', 'completion', 'bash', '>', 'octocov.bash'
-    system './octocov', 'completion', 'zsh', '>', 'octocov.zsh'
     bin.install 'octocov'
-    bash_completion.install 'octocov.bash' => 'octocov'
-    zsh_completion.install 'octocov.zsh' => '_octocov'
+    output = Utils.safe_popen_read("#{bin}/octocov", 'completion', 'bash')
+    (bash_completion/'octocov').write output
+    output = Utils.safe_popen_read("#{bin}/octocov", 'completion', 'zsh')
+    (zsh_completion/'_octocov').write output
   end
 end
