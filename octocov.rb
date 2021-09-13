@@ -24,8 +24,8 @@ class Octocov < Formula
   end
 
   def install
-    system './octocov', 'completion', 'bash', 'octocov.bash'
-    system './octocov', 'completion', 'zsh', 'octocov.zsh'
+    system './octocov', 'completion', 'bash', '>', 'octocov.bash'
+    system './octocov', 'completion', 'zsh', '>', 'octocov.zsh'
     bin.install 'octocov'
     bash_completion.install 'octocov.bash' => 'octocov'
     zsh_completion.install 'octocov.zsh' => '_octocov'
