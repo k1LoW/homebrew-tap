@@ -5,17 +5,26 @@
 class Ghput < Formula
   desc "ghput is a CI-friendly tool that puts * on GitHub."
   homepage "https://github.com/k1LoW/ghput"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
   bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/ghput/releases/download/v0.9.0/ghput_v0.9.0_darwin_amd64.zip"
-    sha256 "2dc12ed8b46d85c1e91a0a4b48d966e65059b37b909c7aec55e48ca726a17984"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/ghput/releases/download/v0.10.0/ghput_v0.10.0_darwin_amd64.zip"
+      sha256 "10e1f05b696eca011d9872c9f9e56523639213b2866a2429cfe522fe71cd9ca6"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/k1LoW/ghput/releases/download/v0.10.0/ghput_v0.10.0_darwin_arm64.zip"
+      sha256 "763f79c8ce1c6c016f968cbe88bca54317876cb1ee481bf2fc4c28e8ac5cc6b6"
+    end
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/ghput/releases/download/v0.9.0/ghput_v0.9.0_linux_amd64.tar.gz"
-    sha256 "ea73f689ea3dc76052a33c814021c6a053944429e47495c8c80df0309a000b7f"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/ghput/releases/download/v0.10.0/ghput_v0.10.0_linux_amd64.tar.gz"
+      sha256 "61f235dedb0c2aaffde88bc5226e370e5b03e67d10b79d5fd47d7eceea03cc99"
+    end
   end
 
   def install
