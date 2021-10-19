@@ -5,17 +5,26 @@
 class Tbls < Formula
   desc "tbls is a CI-Friendly tool for document a database, written in Go."
   homepage "https://github.com/k1LoW/tbls"
-  version "1.50.0"
+  version "1.51.0"
   license "MIT"
   bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/tbls/releases/download/v1.50.0/tbls_v1.50.0_darwin_amd64.zip"
-    sha256 "1672a779230c2bd5f911bc8f2b8296fbcfce6d9a20608e2827af0a50a3ab9f64"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/tbls/releases/download/v1.51.0/tbls_v1.51.0_darwin_amd64.zip"
+      sha256 "69550ad5a5949b525ed34bbbbdea2506e28b1ae5b2d9bcddb53c9af3695800ae"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/k1LoW/tbls/releases/download/v1.51.0/tbls_v1.51.0_darwin_arm64.zip"
+      sha256 "3de874f0447293b90e7fd948485846d22e1059e7ba175b529c2f852f341b79e1"
+    end
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/tbls/releases/download/v1.50.0/tbls_v1.50.0_linux_amd64.tar.gz"
-    sha256 "c61d93b2c0820a1532411a0194f99543887b27167c9bebcd4e587c68ffaf5bd5"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/tbls/releases/download/v1.51.0/tbls_v1.51.0_linux_amd64.tar.gz"
+      sha256 "b0ccc30a8839267a28be0b1a19095624713597919ca481b308cd73391328d1da"
+    end
   end
 
   def install
