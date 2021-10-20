@@ -3,7 +3,6 @@ class Colr < Formula
   desc "colr colors strings, colorfully."
   homepage "https://github.com/k1LoW/colr"
   version "1.0.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/colr/releases/download/v1.0.0/colr_v1.0.0_darwin_amd64.zip"

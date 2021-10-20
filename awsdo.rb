@@ -7,7 +7,6 @@ class Awsdo < Formula
   homepage "https://github.com/k1LoW/awsdo"
   version "0.7.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/k1LoW/awsdo/releases/download/v0.7.0/awsdo_v0.7.0_darwin_amd64.zip"

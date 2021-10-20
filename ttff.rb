@@ -3,7 +3,6 @@ class Ttff < Formula
   desc "ttff is a tool for TrueType Font Files"
   homepage "https://github.com/k1LoW/ttff"
   version "0.1.1"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/ttff/releases/download/v0.1.1/ttff_v0.1.1_darwin_amd64.zip"

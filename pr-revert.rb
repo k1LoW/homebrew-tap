@@ -7,7 +7,6 @@ class PrRevert < Formula
   homepage "https://github.com/k1LoW/pr-revert"
   version "0.4.1"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

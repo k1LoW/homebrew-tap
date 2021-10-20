@@ -3,7 +3,6 @@ class Lrep < Formula
   desc "line regular expression parser"
   homepage "https://github.com/k1LoW/lrep"
   version "0.3.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/lrep/releases/download/v0.3.0/lrep_v0.3.0_darwin_amd64.zip"

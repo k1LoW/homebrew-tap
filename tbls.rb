@@ -7,7 +7,6 @@ class Tbls < Formula
   homepage "https://github.com/k1LoW/tbls"
   version "1.51.0"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

@@ -7,7 +7,6 @@ class Slackln < Formula
   homepage "https://github.com/k1LoW/slackln"
   version "0.3.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/k1LoW/slackln/releases/download/v0.3.0/slackln_v0.3.0_darwin_amd64.zip"

@@ -7,7 +7,6 @@ class TrivyDbTo < Formula
   homepage "https://github.com/k1LoW/trivy-db-to"
   version "1.0.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/k1LoW/trivy-db-to/releases/download/v1.0.0/trivy-db-to_v1.0.0_darwin_amd64.zip"

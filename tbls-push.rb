@@ -3,7 +3,6 @@ class TblsPush < Formula
   desc "tbls-push is an external subcommand of tbls for pushing schema data (schema.json) to target GitHub repository."
   homepage "https://github.com/k1LoW/tbls-push"
   version "0.2.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/tbls-push/releases/download/v0.2.0/tbls-push_v0.2.0_darwin_amd64.zip"
@@ -14,7 +13,7 @@ class TblsPush < Formula
       sha256 "2c67b03b2351d28735c3aaf6c8938d6ee7f42e45d896f1278d0d8ef1e55b4845"
     end
   end
-  
+
   depends_on "tbls"
 
   def install

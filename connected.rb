@@ -3,7 +3,6 @@ class Connected < Formula
   desc "Check your MacBook power cable connection."
   homepage "https://github.com/k1LoW/connected"
   version "0.4.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/connected/releases/download/v0.4.0/connected_v0.4.0_darwin_amd64.zip"

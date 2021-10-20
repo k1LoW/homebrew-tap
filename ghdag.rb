@@ -7,7 +7,6 @@ class Ghdag < Formula
   homepage "https://github.com/k1LoW/ghdag"
   version "0.16.0"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

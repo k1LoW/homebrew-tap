@@ -7,7 +7,6 @@ class PrBullet < Formula
   homepage "https://github.com/k1LoW/pr-bullet"
   version "0.4.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/k1LoW/pr-bullet/releases/download/v0.4.0/pr-bullet_v0.4.0_darwin_amd64.zip"

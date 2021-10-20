@@ -7,7 +7,6 @@ class Oshka < Formula
   homepage "https://github.com/k1LoW/oshka"
   version "0.4.0"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

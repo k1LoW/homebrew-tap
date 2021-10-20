@@ -3,7 +3,6 @@ class Filt < Formula
   desc "filt is a interactive/realtime stream filter."
   homepage "https://github.com/k1LoW/filt"
   version "0.7.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/filt/releases/download/v0.7.0/filt_v0.7.0_darwin_amd64.zip"

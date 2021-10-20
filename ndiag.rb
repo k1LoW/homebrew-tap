@@ -7,7 +7,6 @@ class Ndiag < Formula
   homepage "https://github.com/k1LoW/ndiag"
   version "0.14.0"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/k1LoW/ndiag/releases/download/v0.14.0/ndiag_v0.14.0_darwin_amd64.zip"

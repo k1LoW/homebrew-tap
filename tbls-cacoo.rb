@@ -3,7 +3,6 @@ class TblsCacoo < Formula
   desc "tbls-cacoo is an external subcommand of tbls for Cacoo."
   homepage "https://github.com/k1LoW/tbls-cacoo"
   version "0.2.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/tbls-cacoo/releases/download/v0.2.0/tbls-cacoo_v0.2.0_darwin_amd64.zip"
@@ -14,7 +13,7 @@ class TblsCacoo < Formula
       sha256 "b062386fb0f1c5bbad0cd0bed73a373d4c38e5230fe67a0b3b6d0124209bef0d"
     end
   end
-  
+
   depends_on "tbls"
 
   def install

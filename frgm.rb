@@ -3,7 +3,6 @@ class Frgm < Formula
   desc "frgm is a meta snippet (fragment) manager."
   homepage "https://github.com/k1LoW/frgm"
   version "0.10.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/frgm/releases/download/v0.10.0/frgm_v0.10.0_darwin_amd64.zip"

@@ -3,7 +3,6 @@ class Keyp < Formula
   desc "keyp is a tool to keep public keys up to date."
   homepage "https://github.com/k1LoW/keyp"
   version "0.6.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/keyp/releases/download/v0.6.0/keyp_v0.6.0_darwin_amd64.zip"

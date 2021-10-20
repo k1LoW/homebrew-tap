@@ -3,7 +3,6 @@ class Metr < Formula
   desc "metr gets system metrics."
   homepage "https://github.com/k1LoW/metr"
   version "0.10.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/metr/releases/download/v0.10.0/metr_v0.10.0_darwin_amd64.zip"

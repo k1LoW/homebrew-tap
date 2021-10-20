@@ -3,7 +3,6 @@ class TblsBuild < Formula
   desc "tbls-build is an external subcommand of tbls for customizing config file of tbls using other tbls.yml or schema.json."
   homepage "https://github.com/k1LoW/tbls-build"
   version "0.3.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/tbls-build/releases/download/v0.3.0/tbls-build_v0.3.0_darwin_amd64.zip"
@@ -14,7 +13,7 @@ class TblsBuild < Formula
       sha256 "da9326a44202776c6a80988703fb9399232149550a96d29795c4c42856c51901"
     end
   end
-  
+
   depends_on "tbls"
 
   def install

@@ -3,7 +3,6 @@ class TblsMeta < Formula
   desc "tbls-meta is an external subcommand of tbls for applying metadata managed by tbls to the datasource."
   homepage "https://github.com/k1LoW/tbls-meta"
   version "0.2.2"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/tbls-meta/releases/download/v0.2.2/tbls-meta_v0.2.2_darwin_amd64.zip"
@@ -14,7 +13,7 @@ class TblsMeta < Formula
       sha256 "ffc381b8c1a89309ab4be0b0883064ba864cd931a93942967b98f4899ef121cf"
     end
   end
-  
+
   depends_on "tbls"
 
   def install

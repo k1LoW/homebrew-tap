@@ -3,7 +3,6 @@ class Evry < Formula
   desc "`evry` split STDIN stream and execute specified command **every** N lines/seconds."
   homepage "https://github.com/k1LoW/evry"
   version "0.2.3"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/evry/releases/download/v0.2.3/evry_v0.2.3_darwin_amd64.zip"

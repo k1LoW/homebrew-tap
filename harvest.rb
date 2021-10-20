@@ -3,7 +3,6 @@ class Harvest < Formula
   desc "Portable log aggregation tool for middle-scale system operation/observation."
   homepage "https://github.com/k1LoW/harvest"
   version "0.17.3"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/k1LoW/harvest/releases/download/v0.17.3/harvest_v0.17.3_darwin_amd64.zip"

@@ -7,7 +7,6 @@ class Octocov < Formula
   homepage "https://github.com/k1LoW/octocov"
   version "0.24.0"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
