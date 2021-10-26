@@ -5,21 +5,21 @@
 class Octocov < Formula
   desc "octocov is a tool for collecting code metrics."
   homepage "https://github.com/k1LoW/octocov"
-  version "0.25.0"
+  version "0.26.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/octocov/releases/download/v0.25.0/octocov_v0.25.0_darwin_amd64.zip"
-      sha256 "d58e6796970a14721e2c5266971059347f84b98659fefe7ddeab208f77ab04dd"
+      url "https://github.com/k1LoW/octocov/releases/download/v0.26.0/octocov_v0.26.0_darwin_amd64.zip"
+      sha256 "51b3343690bbf74d915255ba41656d58cefe2070cb008f1960246dd37785a619"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/octocov/releases/download/v0.25.0/octocov_v0.25.0_linux_amd64.tar.gz"
-      sha256 "fc44dc702b2573f9eb5e665f7cb3242d041a6fb41ef5134b158a8c1b2b71ac9b"
+      url "https://github.com/k1LoW/octocov/releases/download/v0.26.0/octocov_v0.26.0_linux_amd64.tar.gz"
+      sha256 "30c679cdcd6d0112250aff205b8bc0e7767d27925926e416165da5f9bddc7b55"
     end
   end
 
