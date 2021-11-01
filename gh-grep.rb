@@ -5,21 +5,21 @@
 class GhGrep < Formula
   desc "Print lines matching a pattern in repositories using GitHub API"
   homepage "https://github.com/k1LoW/gh-grep"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/gh-grep/releases/download/v0.1.1/gh-grep_v0.1.1_darwin_arm64.zip"
-      sha256 "59b26c7f0627dfcfa34f3a7b473a3b9490bfe5d7376f3b1f2691d82ca972396a"
+      url "https://github.com/k1LoW/gh-grep/releases/download/v0.2.0/gh-grep_v0.2.0_darwin_arm64.zip"
+      sha256 "6455d37cb04f10fb2eb1db0cb2481e3eb54b1a760142f32caa1d7aff69075690"
 
       def install
         bin.install "gh-grep"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/gh-grep/releases/download/v0.1.1/gh-grep_v0.1.1_darwin_amd64.zip"
-      sha256 "13f80f15a78b55f3af4f639f1c5bb0102b69c21d66ba64ab74c1bf28e9ec823f"
+      url "https://github.com/k1LoW/gh-grep/releases/download/v0.2.0/gh-grep_v0.2.0_darwin_amd64.zip"
+      sha256 "83c87232d2e43e362d7b05d8b8cbb7525e31d0d4e49bccb4740993a5d07d43ac"
 
       def install
         bin.install "gh-grep"
@@ -29,8 +29,8 @@ class GhGrep < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/gh-grep/releases/download/v0.1.1/gh-grep_v0.1.1_linux_amd64.tar.gz"
-      sha256 "9a5c186d93a4ff426c0422c6f890b429959c23941e4c63433895d80f7ebf8a08"
+      url "https://github.com/k1LoW/gh-grep/releases/download/v0.2.0/gh-grep_v0.2.0_linux_amd64.tar.gz"
+      sha256 "8c24c2102be44799a043dc06378eca8a299dcc3ca0ea96b82674f8b5ec27aa07"
 
       def install
         bin.install "gh-grep"
