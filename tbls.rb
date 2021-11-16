@@ -5,33 +5,48 @@
 class Tbls < Formula
   desc "tbls is a CI-Friendly tool for document a database, written in Go."
   homepage "https://github.com/k1LoW/tbls"
-  version "1.52.0"
+  version "1.53.0"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.52.0/tbls_v1.52.0_darwin_arm64.zip"
-      sha256 "74bc0eff8a5b0f631afd716cbd205d1a45cf71668208ae1a607b16ea93b75de9"
+      url "https://github.com/k1LoW/tbls/releases/download/v1.53.0/tbls_v1.53.0_darwin_arm64.zip"
+      sha256 "878f0f3ccf7e33b644d9cd69c237504356d5772a237b06a029ac76729ddc1f55"
+
+      def install
+        system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
+        system './tbls', 'completion', 'zsh', '--out', 'tbls.zsh'
+        bin.install 'tbls'
+        bash_completion.install 'tbls.bash' => 'tbls'
+        zsh_completion.install 'tbls.zsh' => '_tbls'
+      end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.52.0/tbls_v1.52.0_darwin_amd64.zip"
-      sha256 "9d4d519cd7413a34fee12fc3dd3a038994b2fd7baeb0b72a318627841bf16f8f"
+      url "https://github.com/k1LoW/tbls/releases/download/v1.53.0/tbls_v1.53.0_darwin_amd64.zip"
+      sha256 "89c8b9f69c537af72c08e8a79def07ff9b6006c61d5a59d4cc87176ef0f97a6e"
+
+      def install
+        system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
+        system './tbls', 'completion', 'zsh', '--out', 'tbls.zsh'
+        bin.install 'tbls'
+        bash_completion.install 'tbls.bash' => 'tbls'
+        zsh_completion.install 'tbls.zsh' => '_tbls'
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.52.0/tbls_v1.52.0_linux_amd64.tar.gz"
-      sha256 "2c28b59cab9594a25e0cc5dc4658245b083568690fe5da04c0ca49afb3cf30b7"
-    end
-  end
+      url "https://github.com/k1LoW/tbls/releases/download/v1.53.0/tbls_v1.53.0_linux_amd64.tar.gz"
+      sha256 "cebb4994b9f5ec6ac61c3ff14332ec778402099d86ef8cd040e1265cc775b6a5"
 
-  def install
-    system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
-    system './tbls', 'completion', 'zsh', '--out', 'tbls.zsh'
-    bin.install 'tbls'
-    bash_completion.install 'tbls.bash' => 'tbls'
-    zsh_completion.install 'tbls.zsh' => '_tbls'
+      def install
+        system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
+        system './tbls', 'completion', 'zsh', '--out', 'tbls.zsh'
+        bin.install 'tbls'
+        bash_completion.install 'tbls.bash' => 'tbls'
+        zsh_completion.install 'tbls.zsh' => '_tbls'
+      end
+    end
   end
 end
