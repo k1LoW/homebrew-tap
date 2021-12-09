@@ -5,35 +5,47 @@
 class Dirmap < Formula
   desc "dirmap is a tool for generating a directory map."
   homepage "https://github.com/k1LoW/dirmap"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/dirmap/releases/download/v0.1.1/dirmap_v0.1.1_darwin_amd64.zip"
-      sha256 "39892361dd2aae17144b398def8fd0c926735dc5ce13cdc3b10275fbd523ef11"
+      url "https://github.com/k1LoW/dirmap/releases/download/v0.2.0/dirmap_v0.2.0_darwin_amd64.zip"
+      sha256 "8b93550b02df2de9a16b1cf6f5fcc1069fbc9be07520fb2fc08c4952d0c0ba4d"
 
       def install
-        bin.install "dirmap"
+        bin.install 'dirmap'
+        output = Utils.safe_popen_read("#{bin}/dirmap", 'completion', 'bash')
+        (bash_completion/'dirmap').write output
+        output = Utils.safe_popen_read("#{bin}/dirmap", 'completion', 'zsh')
+        (zsh_completion/'_dirmap').write output
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/dirmap/releases/download/v0.1.1/dirmap_v0.1.1_darwin_arm64.zip"
-      sha256 "47913af18117002b3fdb6e1eb1db0b9440595812a328e0b7de89c6b4fcac3739"
+      url "https://github.com/k1LoW/dirmap/releases/download/v0.2.0/dirmap_v0.2.0_darwin_arm64.zip"
+      sha256 "9d01cc4beb5d7ec75d4b102785a12231821c05b8bbfa7e3f1e9b4ef983a8ee88"
 
       def install
-        bin.install "dirmap"
+        bin.install 'dirmap'
+        output = Utils.safe_popen_read("#{bin}/dirmap", 'completion', 'bash')
+        (bash_completion/'dirmap').write output
+        output = Utils.safe_popen_read("#{bin}/dirmap", 'completion', 'zsh')
+        (zsh_completion/'_dirmap').write output
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/dirmap/releases/download/v0.1.1/dirmap_v0.1.1_linux_amd64.tar.gz"
-      sha256 "dd2593a532ee95d80b664b4da7bc060fce19ca9c540b0b70ef11adb2c9c717ca"
+      url "https://github.com/k1LoW/dirmap/releases/download/v0.2.0/dirmap_v0.2.0_linux_amd64.tar.gz"
+      sha256 "5b53efd9d8029ecbbf894300d58a864db1e4c6c478054657dcef456d44de20ac"
 
       def install
-        bin.install "dirmap"
+        bin.install 'dirmap'
+        output = Utils.safe_popen_read("#{bin}/dirmap", 'completion', 'bash')
+        (bash_completion/'dirmap').write output
+        output = Utils.safe_popen_read("#{bin}/dirmap", 'completion', 'zsh')
+        (zsh_completion/'_dirmap').write output
       end
     end
   end
