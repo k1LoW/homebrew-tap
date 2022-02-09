@@ -5,27 +5,60 @@
 class Slackln < Formula
   desc "Println(Slack)."
   homepage "https://github.com/k1LoW/slackln"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/slackln/releases/download/v0.3.0/slackln_v0.3.0_darwin_amd64.zip"
-    sha256 "5ccb5236a8959e21197070dce5455216b424d4a18518a98bd593cfe5843b3ceb"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/k1LoW/slackln/releases/download/v0.3.0/slackln_v0.3.0_linux_amd64.tar.gz"
-    sha256 "0e7d94536fadf9aa5483666e2131b5fb2276eb3a05f5c941d7bfddeab6976c8e"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/k1LoW/slackln/releases/download/v0.3.0/slackln_v0.3.0_linux_arm64.tar.gz"
-    sha256 "fb35b14d112d99b33f75c6b6bec40891395ed49fa5556cc3719ea7fe6d487a27"
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/k1LoW/slackln/releases/download/v0.3.1/slackln_v0.3.1_darwin_arm64.zip"
+      sha256 "67d04a10bc0c53a2ef8bb24422050c0f1632bba41a3b529104f44c3052e79f79"
+
+      def install
+        system './slackln', 'completion', 'bash', '--out', 'slackln.bash'
+        system './slackln', 'completion', 'zsh', '--out', 'slackln.zsh'
+        bin.install 'slackln'
+        bash_completion.install 'slackln.bash' => 'slackln'
+        zsh_completion.install 'slackln.zsh' => '_slackln'
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/slackln/releases/download/v0.3.1/slackln_v0.3.1_darwin_amd64.zip"
+      sha256 "df60853db427e3efe130ca94fa276cc7855833a7ac13f01f5b024651e3efd8da"
+
+      def install
+        system './slackln', 'completion', 'bash', '--out', 'slackln.bash'
+        system './slackln', 'completion', 'zsh', '--out', 'slackln.zsh'
+        bin.install 'slackln'
+        bash_completion.install 'slackln.bash' => 'slackln'
+        zsh_completion.install 'slackln.zsh' => '_slackln'
+      end
+    end
   end
 
-  def install
-    system './slackln', 'completion', 'bash', '--out', 'slackln.bash'
-    system './slackln', 'completion', 'zsh', '--out', 'slackln.zsh'
-    bin.install 'slackln'
-    bash_completion.install 'slackln.bash' => 'slackln'
-    zsh_completion.install 'slackln.zsh' => '_slackln'
+  on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/k1LoW/slackln/releases/download/v0.3.1/slackln_v0.3.1_linux_arm64.tar.gz"
+      sha256 "5c3eaa3977ad458e8f12bc9c21825447769267a4cbe682ca350fe34e818353f7"
+
+      def install
+        system './slackln', 'completion', 'bash', '--out', 'slackln.bash'
+        system './slackln', 'completion', 'zsh', '--out', 'slackln.zsh'
+        bin.install 'slackln'
+        bash_completion.install 'slackln.bash' => 'slackln'
+        zsh_completion.install 'slackln.zsh' => '_slackln'
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/slackln/releases/download/v0.3.1/slackln_v0.3.1_linux_amd64.tar.gz"
+      sha256 "2df4a9c9a1a9f1d632e95f8ee8a67e2daab402b73d8a5d7becedb879f093cee7"
+
+      def install
+        system './slackln', 'completion', 'bash', '--out', 'slackln.bash'
+        system './slackln', 'completion', 'zsh', '--out', 'slackln.zsh'
+        bin.install 'slackln'
+        bash_completion.install 'slackln.bash' => 'slackln'
+        zsh_completion.install 'slackln.zsh' => '_slackln'
+      end
+    end
   end
 end
