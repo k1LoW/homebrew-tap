@@ -5,24 +5,36 @@
 class Oshka < Formula
   desc "oshka is a tool for extracting nested CI/CD supply chains and executing commands."
   homepage "https://github.com/k1LoW/oshka"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/k1LoW/oshka/releases/download/v0.4.1/oshka_v0.4.1_darwin_arm64.zip"
+      sha256 "b17aa0fb5ceaf9f688b5136e132d366ba58215be39e662a2002bfda4b0abe2cf"
+
+      def install
+        bin.install "oshka"
+      end
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/oshka/releases/download/v0.4.0/oshka_v0.4.0_darwin_amd64.zip"
-      sha256 "0cfb6befac5628c13b6d5117d016ab2965e0e9d4454c7c3959098ba5ea871fff"
+      url "https://github.com/k1LoW/oshka/releases/download/v0.4.1/oshka_v0.4.1_darwin_amd64.zip"
+      sha256 "9c0d536b17a309dfb212ad5db75c0fa5104998a5777e7a99948fc6dee2ff5c38"
+
+      def install
+        bin.install "oshka"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/oshka/releases/download/v0.4.0/oshka_v0.4.0_linux_amd64.tar.gz"
-      sha256 "5f0e31264ff5f5323e2f579ff8600b9a00b8e79e856bddb37d743a6ec9607d98"
-    end
-  end
+      url "https://github.com/k1LoW/oshka/releases/download/v0.4.1/oshka_v0.4.1_linux_amd64.tar.gz"
+      sha256 "3e3732eb47b526b346971244e4003a2b898177f4a7ed4f136caa3a282847f397"
 
-  def install
-    bin.install "oshka"
+      def install
+        bin.install "oshka"
+      end
+    end
   end
 end
