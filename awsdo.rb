@@ -5,13 +5,21 @@
 class Awsdo < Formula
   desc "awsdo is a tool to do anything using AWS temporary credentials."
   homepage "https://github.com/k1LoW/awsdo"
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.9.2/awsdo_v0.9.2_darwin_arm64.zip"
+      sha256 "631386afc8158b73a86d40179f300939c6a0172920daacb7f5e3b46ce1c5915e"
+
+      def install
+        bin.install "awsdo"
+      end
+    end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/awsdo/releases/download/v0.9.1/awsdo_v0.9.1_darwin_amd64.zip"
-      sha256 "bb736b5a0c1f3c99e43414abf23d8eb0eb9e71e926d9bacded9685b0d9bcef7c"
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.9.2/awsdo_v0.9.2_darwin_amd64.zip"
+      sha256 "d5b957d771416642ff1fb2507f48f5aee03086bf346948914f7cb9b6ffb9fa10"
 
       def install
         bin.install "awsdo"
@@ -21,8 +29,8 @@ class Awsdo < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/awsdo/releases/download/v0.9.1/awsdo_v0.9.1_linux_amd64.tar.gz"
-      sha256 "c9db2ac4ba66f9d349d756cd3a5ce93f40da86d6d6d67ba8c5d81b28967b670d"
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.9.2/awsdo_v0.9.2_linux_amd64.tar.gz"
+      sha256 "9ad790d0e9e3f3abefd89d29970e6968c234c2d35a8e81bd76e7221fffe9b170"
 
       def install
         bin.install "awsdo"
