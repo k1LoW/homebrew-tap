@@ -5,22 +5,22 @@
 class BrewfileDesc < Formula
   desc "brewfile-desc add descriptions of formulae to Brewfile."
   homepage "https://github.com/k1LoW/brewfile-desc"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/brewfile-desc/releases/download/v0.1.0/brewfile-desc_v0.1.0_darwin_arm64.zip"
-      sha256 "b80ad9f758e52afdcab27c3eea56a6dbd30e19cae94c65d95c6503c1b7c16963"
+      url "https://github.com/k1LoW/brewfile-desc/releases/download/v0.1.1/brewfile-desc_v0.1.1_darwin_arm64.zip"
+      sha256 "5bd52af1d234a657bf00547c7c50291b072394e36e09ea9f58ffa507c8acaf75"
 
       def install
         bin.install 'brewfile-desc'
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/brewfile-desc/releases/download/v0.1.0/brewfile-desc_v0.1.0_darwin_amd64.zip"
-      sha256 "65aaf0d5dfe3624698aa1feac61d834ec6cbaeb47ebdd062622e906dc5774738"
+      url "https://github.com/k1LoW/brewfile-desc/releases/download/v0.1.1/brewfile-desc_v0.1.1_darwin_amd64.zip"
+      sha256 "1c4261b408601459a9b26f3d0f103b25bfb83d370df37ae9badea0fdb7a83c0f"
 
       def install
         bin.install 'brewfile-desc'
