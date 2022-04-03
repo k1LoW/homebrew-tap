@@ -5,13 +5,13 @@
 class Octocov < Formula
   desc "octocov is a toolkit for collecting code metrics."
   homepage "https://github.com/k1LoW/octocov"
-  version "0.38.2"
+  version "0.39.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/octocov/releases/download/v0.38.2/octocov_v0.38.2_darwin_amd64.zip"
-      sha256 "5138ef8268ecda835c05d046dab2687b51a0b020bab5b0f5c19983b564c53d9c"
+      url "https://github.com/k1LoW/octocov/releases/download/v0.39.0/octocov_v0.39.0_darwin_amd64.zip"
+      sha256 "3900a713563c46d081ad53d8b3b199853fad23d2f3471e6c7ae9f0295714c7d1"
 
       def install
         bin.install 'octocov'
@@ -22,8 +22,8 @@ class Octocov < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/octocov/releases/download/v0.38.2/octocov_v0.38.2_darwin_arm64.zip"
-      sha256 "bd993e81c0a460e7f3582f13ddb63cbb44a923e7464fcc4ae3a9625f36ff9063"
+      url "https://github.com/k1LoW/octocov/releases/download/v0.39.0/octocov_v0.39.0_darwin_arm64.zip"
+      sha256 "6e1cafefc4304f1860d1955a79cb86aa4b6234adb9a132e5f5ea58f2f31b525f"
 
       def install
         bin.install 'octocov'
@@ -37,8 +37,8 @@ class Octocov < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/octocov/releases/download/v0.38.2/octocov_v0.38.2_linux_amd64.tar.gz"
-      sha256 "f10459d275e18f7b0b03aa8e352777fa470f62db84a902b6d1296f9297e892f5"
+      url "https://github.com/k1LoW/octocov/releases/download/v0.39.0/octocov_v0.39.0_linux_amd64.tar.gz"
+      sha256 "45a0702d7f935f2589013805394bfaaa1ed945a31b83b411e43a6549420d0f03"
 
       def install
         bin.install 'octocov'
