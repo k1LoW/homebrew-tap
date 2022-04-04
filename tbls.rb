@@ -5,13 +5,14 @@
 class Tbls < Formula
   desc "tbls is a CI-Friendly tool for document a database, written in Go."
   homepage "https://github.com/k1LoW/tbls"
-  version "1.54.2"
+  version "1.55.0"
   license "MIT"
+  depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.54.2/tbls_v1.54.2_darwin_arm64.zip"
-      sha256 "354d02c81679c2b53f45b68d52890a0d27f4f116112810c63defcab03f62806c"
+      url "https://github.com/k1LoW/tbls/releases/download/v1.55.0/tbls_v1.55.0_darwin_arm64.zip"
+      sha256 "1f5bf3c8813f36789851e34820a9000f0654ea6a34897313ffb1af9ba01aa798"
 
       def install
         system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
@@ -22,23 +23,8 @@ class Tbls < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.54.2/tbls_v1.54.2_darwin_amd64.zip"
-      sha256 "59723e205dcb40b44b8e846ff2370e1082b2feff401b2cced67c0750ee960a3d"
-
-      def install
-        system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
-        system './tbls', 'completion', 'zsh', '--out', 'tbls.zsh'
-        bin.install 'tbls'
-        bash_completion.install 'tbls.bash' => 'tbls'
-        zsh_completion.install 'tbls.zsh' => '_tbls'
-      end
-    end
-  end
-
-  on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.54.2/tbls_v1.54.2_linux_amd64.tar.gz"
-      sha256 "090f1b2830da7f59634e6009de25674c046b7a1000cfce0888aeecbd1a447293"
+      url "https://github.com/k1LoW/tbls/releases/download/v1.55.0/tbls_v1.55.0_darwin_amd64.zip"
+      sha256 "02a6e3718de1f5687d1ab2a3b9b0ad6bc73cac16b3bc07d748795a16213ade93"
 
       def install
         system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
