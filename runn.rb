@@ -5,13 +5,13 @@
 class Runn < Formula
   desc "runn is a tool for running operations following a scenario."
   homepage "https://github.com/k1LoW/runn"
-  version "0.30.2"
+  version "0.30.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/runn/releases/download/v0.30.2/runn_v0.30.2_darwin_arm64.zip"
-      sha256 "4e9f8b77ef519e0e24596aaef9dc86590cd7f5d85c83ebc9475505484b8b44d8"
+      url "https://github.com/k1LoW/runn/releases/download/v0.30.3/runn_v0.30.3_darwin_arm64.zip"
+      sha256 "c5c1ea2acf3675aa756b66354a507945104ed45e8b18e3f6d864a1c5660e5014"
 
       def install
         bin.install 'runn'
@@ -22,8 +22,8 @@ class Runn < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/runn/releases/download/v0.30.2/runn_v0.30.2_darwin_amd64.zip"
-      sha256 "406c789ca7dd560de6b9e5b973f7cd6832481416e5477660862ed3fac767a0c2"
+      url "https://github.com/k1LoW/runn/releases/download/v0.30.3/runn_v0.30.3_darwin_amd64.zip"
+      sha256 "cb2bc965b096ded0043b38b2fa17d3a2dd3e7b84053cf25cb27db337370388eb"
 
       def install
         bin.install 'runn'
@@ -37,8 +37,8 @@ class Runn < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/runn/releases/download/v0.30.2/runn_v0.30.2_linux_amd64.tar.gz"
-      sha256 "a871ac2ed1d28daae50c37388864c8431cbe86c6e2b192f09d67c651165679e6"
+      url "https://github.com/k1LoW/runn/releases/download/v0.30.3/runn_v0.30.3_linux_amd64.tar.gz"
+      sha256 "32934c660a748f78d4855086e3486ad69c1b69e0232e13e66170df128ce90326"
 
       def install
         bin.install 'runn'
