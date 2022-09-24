@@ -5,14 +5,14 @@
 class Tbls < Formula
   desc "tbls is a CI-Friendly tool for document a database, written in Go."
   homepage "https://github.com/k1LoW/tbls"
-  version "1.56.2"
+  version "1.56.3"
   license "MIT"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.56.2/tbls_v1.56.2_darwin_arm64.zip"
-      sha256 "306d384358af57bc44b8304819bb8525711448ca30a6631a0b496801cbdd9fc0"
+      url "https://github.com/k1LoW/tbls/releases/download/v1.56.3/tbls_v1.56.3_darwin_arm64.zip"
+      sha256 "0e49b4c85606c46249c67a57833ef87b0d7bb3912812484925b0a7eafec7ac06"
 
       def install
         system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
@@ -23,8 +23,8 @@ class Tbls < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/tbls/releases/download/v1.56.2/tbls_v1.56.2_darwin_amd64.zip"
-      sha256 "3272cd9457e1e0589432acd4ad299420594661d8705c5e412a00288b543ced41"
+      url "https://github.com/k1LoW/tbls/releases/download/v1.56.3/tbls_v1.56.3_darwin_amd64.zip"
+      sha256 "58f3b39bb3b726e23bfb82e7e30dc6c00304a2e54fa6b33e2f62916e1e42e105"
 
       def install
         system './tbls', 'completion', 'bash', '--out', 'tbls.bash'
