@@ -5,12 +5,12 @@
 class Filt < Formula
   desc "filt is a interactive/realtime stream filter."
   homepage "https://github.com/k1LoW/filt"
-  version "0.8.0"
+  version "0.8.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/filt/releases/download/v0.8.0/filt_v0.8.0_darwin_arm64.zip"
-      sha256 "2923c5d872745728fc21ac0b5f8b892f987c4654f00591fa7555df6f0b52301f"
+      url "https://github.com/k1LoW/filt/releases/download/v0.8.2/filt_v0.8.2_darwin_arm64.zip"
+      sha256 "bf72725b231cc01a72b16c4ef4bada598189529f70ef4b7c0a5fbccf18c0489e"
 
       def install
         bin.install 'filt'
@@ -21,8 +21,8 @@ class Filt < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/filt/releases/download/v0.8.0/filt_v0.8.0_darwin_amd64.zip"
-      sha256 "137b15437a15569141b12c02d05317e1c0b9db567ea7ef4d88e11cce0db0d1fd"
+      url "https://github.com/k1LoW/filt/releases/download/v0.8.2/filt_v0.8.2_darwin_amd64.zip"
+      sha256 "2579fcabf8ca89ed278500abe8489cf0d082b985a5b2e9065cfd45b3bd8ae324"
 
       def install
         bin.install 'filt'
@@ -36,8 +36,8 @@ class Filt < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k1LoW/filt/releases/download/v0.8.0/filt_v0.8.0_linux_arm64.tar.gz"
-      sha256 "5424589e650c66de2c238473ed53bf1c7ab99f9dfb91eeffc5437bd9d397de89"
+      url "https://github.com/k1LoW/filt/releases/download/v0.8.2/filt_v0.8.2_linux_arm64.tar.gz"
+      sha256 "f7e3e2951420f181a71e8d641087cd0eef8588eb9e017f4f4f8040067ed8624e"
 
       def install
         bin.install 'filt'
@@ -48,8 +48,8 @@ class Filt < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/filt/releases/download/v0.8.0/filt_v0.8.0_linux_amd64.tar.gz"
-      sha256 "af1d99a7e0507b256eb1e88f36a5b507cca35952c13b0e00afa90a40d95418cb"
+      url "https://github.com/k1LoW/filt/releases/download/v0.8.2/filt_v0.8.2_linux_amd64.tar.gz"
+      sha256 "9c052ef5749960e5a848713fb143de75958fbbe95a277f778a741c3063e0d182"
 
       def install
         bin.install 'filt'
