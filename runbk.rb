@@ -5,13 +5,13 @@
 class Runbk < Formula
   desc "runbk is a tool for running operations following a scenario."
   homepage "https://github.com/k1LoW/runbk"
-  version "0.0.1"
+  version "0.35.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/k1LoW/runbk/releases/download/v0.0.1/runbk_v0.0.1_darwin_arm64.zip"
-      sha256 "79e73e994011965858eff75f7ec1d898015465da9cd1c5d93f9842c6f9c4f0ca"
+      sha256 "ef58f708c7e9dfc87bfb60de1ef3f51ee15e6efa1363195e2e095462eb85fdcf"
 
       def install
         bin.install 'runbk'
@@ -23,7 +23,7 @@ class Runbk < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/runbk/releases/download/v0.0.1/runbk_v0.0.1_darwin_amd64.zip"
-      sha256 "44199f3760e456f004672fae1979d05fb8297d11b267d59f934aed2f253965b9"
+      sha256 "6bedcd663b116eb398e088dc92c96efbc4b3ae6aa79ae48d822fa4ef49b71ff5"
 
       def install
         bin.install 'runbk'
@@ -38,7 +38,7 @@ class Runbk < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/runbk/releases/download/v0.0.1/runbk_v0.0.1_linux_amd64.tar.gz"
-      sha256 "dcb26b328b42b44239b7f79cce89c17f923d852af95b989f6a134832109524be"
+      sha256 "5bb92a0e2312b91eeb5a95c89b6db27975e3939015e99380aec1bff1da87f54a"
 
       def install
         bin.install 'runbk'
