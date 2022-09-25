@@ -1,0 +1,25 @@
+name: Update formulae
+on:
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: macos-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Install maltmill
+        run: |
+          brew install Songmu/tap/maltmill
+
+      - name: Update formulae
+        run: |
+          make update-all
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '*.rb'
