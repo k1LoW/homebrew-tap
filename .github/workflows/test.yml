@@ -21,9 +21,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-
       - name: Install formulae
         run: |
           make install-all-linux
