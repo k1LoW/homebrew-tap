@@ -1,6 +1,8 @@
 name: Update formulae
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '00 6,18 * * *'
 
 jobs:
   update:
