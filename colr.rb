@@ -5,21 +5,21 @@
 class Colr < Formula
   desc "colr colors strings, colorfully."
   homepage "https://github.com/k1LoW/colr"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/colr/releases/download/v1.1.0/colr_v1.1.0_darwin_arm64.zip"
-      sha256 "7ee66da55639ddd455ad257576108e9e57d90072470b979e4e7521ec79a09d2b"
+      url "https://github.com/k1LoW/colr/releases/download/v1.1.1/colr_v1.1.1_darwin_arm64.zip"
+      sha256 "d541200428165efa9cfd2ada78bac770f231dc4af2af7de90ae59146feeb1967"
 
       def install
         bin.install 'colr'
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/colr/releases/download/v1.1.0/colr_v1.1.0_darwin_amd64.zip"
-      sha256 "5127150b46eec6d69f1da893a7c65f45e7f9eb4c7b723d35dff20344f309ca13"
+      url "https://github.com/k1LoW/colr/releases/download/v1.1.1/colr_v1.1.1_darwin_amd64.zip"
+      sha256 "0e505e9c7e473c790359c69ae69699f4ad52b6cc8c10c2ccbe84532acfe3d138"
 
       def install
         bin.install 'colr'
@@ -29,16 +29,16 @@ class Colr < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k1LoW/colr/releases/download/v1.1.0/colr_v1.1.0_linux_arm64.tar.gz"
-      sha256 "6bf455cffe78469ff4863379e89ffac9074257fae599bf8ef332d697e98a25e1"
+      url "https://github.com/k1LoW/colr/releases/download/v1.1.1/colr_v1.1.1_linux_arm64.tar.gz"
+      sha256 "83eeaed524c26fd94e7b708a1e58fb53d29d094e79f9624091ebdba695f7e460"
 
       def install
         bin.install 'colr'
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/colr/releases/download/v1.1.0/colr_v1.1.0_linux_amd64.tar.gz"
-      sha256 "7caef29edc6b486910507ee4cf409bbc88c369e5f80f2dce00570e8dce1f43d4"
+      url "https://github.com/k1LoW/colr/releases/download/v1.1.1/colr_v1.1.1_linux_amd64.tar.gz"
+      sha256 "93ada61207baf78991ce90333d4348e906ddd1ee5fba6b1e700b30761917a644"
 
       def install
         bin.install 'colr'
