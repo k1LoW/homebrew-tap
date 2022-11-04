@@ -5,21 +5,21 @@
 class Repin < Formula
   desc "repin is a tool to replace strings between keyword pair."
   homepage "https://github.com/k1LoW/repin"
-  version "0.3.3"
+  version "0.3.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/repin/releases/download/v0.3.3/repin_v0.3.3_darwin_arm64.zip"
-      sha256 "e23dedd8c7a77717c5dcea7d70f2af8d8fc28e20841c8491950f5e95f2b2266e"
+      url "https://github.com/k1LoW/repin/releases/download/v0.3.4/repin_v0.3.4_darwin_arm64.zip"
+      sha256 "2dfde4bae6460a2f454ffd0cbe849f47fd7bb6ad8c730829dc44a7687a617b22"
 
       def install
         bin.install 'repin'
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/repin/releases/download/v0.3.3/repin_v0.3.3_darwin_amd64.zip"
-      sha256 "b204893a7c83df352409963fc6909f09ad5a9d537b7b43fe4385fd9674da435a"
+      url "https://github.com/k1LoW/repin/releases/download/v0.3.4/repin_v0.3.4_darwin_amd64.zip"
+      sha256 "0390650f76323768a6aba878fea6459faca5afe1d37f8bc8631407dfd0a6ea14"
 
       def install
         bin.install 'repin'
@@ -29,8 +29,8 @@ class Repin < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/repin/releases/download/v0.3.3/repin_v0.3.3_linux_amd64.tar.gz"
-      sha256 "01696f46c2ca7702a98a39cd86ea2dce27d0fb9b20ab6da2a77b0f3399aafbaf"
+      url "https://github.com/k1LoW/repin/releases/download/v0.3.4/repin_v0.3.4_linux_amd64.tar.gz"
+      sha256 "4f1f396369609d85de5b4d876d62157e5160c6c5afc2692329f78b313c501062"
 
       def install
         bin.install 'repin'
