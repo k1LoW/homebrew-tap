@@ -5,13 +5,13 @@
 class Dirmap < Formula
   desc "dirmap is a tool for generating a directory map."
   homepage "https://github.com/k1LoW/dirmap"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/dirmap/releases/download/v0.3.0/dirmap_v0.3.0_darwin_amd64.zip"
-      sha256 "a661ca820a9b67815d0a9a088544ad50b6af19c1d64eced29ad433fd28c56b1f"
+      url "https://github.com/k1LoW/dirmap/releases/download/v0.3.1/dirmap_v0.3.1_darwin_amd64.zip"
+      sha256 "279749307f1145801fcc7e88e59264686ebc18c234146c349a5a1cf07c82b9c7"
 
       def install
         bin.install 'dirmap'
@@ -22,8 +22,8 @@ class Dirmap < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/dirmap/releases/download/v0.3.0/dirmap_v0.3.0_darwin_arm64.zip"
-      sha256 "a7f1fd8513392a800eecad33a24de7c1a3499167c1f7c482ea1c84d17824e02b"
+      url "https://github.com/k1LoW/dirmap/releases/download/v0.3.1/dirmap_v0.3.1_darwin_arm64.zip"
+      sha256 "022d35cf4abce43c590947cd209dd3894926410a488aa421f36a106e3c6af156"
 
       def install
         bin.install 'dirmap'
@@ -37,8 +37,8 @@ class Dirmap < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/dirmap/releases/download/v0.3.0/dirmap_v0.3.0_linux_amd64.tar.gz"
-      sha256 "23485696c4ced40344aa4d785a74e3d26ce319ac7a44962625b2f981d447969a"
+      url "https://github.com/k1LoW/dirmap/releases/download/v0.3.1/dirmap_v0.3.1_linux_amd64.tar.gz"
+      sha256 "0c7472c1867fcd483794b1f1f56e2a60795272c30c06be946e43d980865eadfc"
 
       def install
         bin.install 'dirmap'
