@@ -5,21 +5,21 @@
 class TrivyDbTo < Formula
   desc "trivy-db-to is a tool for migrating/converting vulnerability information from Trivy DB to other datasource."
   homepage "https://github.com/k1LoW/trivy-db-to"
-  version "2.0.0"
+  version "2.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/trivy-db-to/releases/download/v2.0.0/trivy-db-to_v2.0.0_darwin_arm64.zip"
-      sha256 "09bb3e6976ee7aaf1e301d5ce221b4404fadc8abf04bfa1963d38b54fe4e3dca"
+      url "https://github.com/k1LoW/trivy-db-to/releases/download/v2.0.1/trivy-db-to_v2.0.1_darwin_arm64.zip"
+      sha256 "22f861c208df1fa6dbdad3c205142caa7e7c8c13ef6bf923fdbd65104f9cf0ba"
 
       def install
         bin.install "trivy-db-to"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/trivy-db-to/releases/download/v2.0.0/trivy-db-to_v2.0.0_darwin_amd64.zip"
-      sha256 "f4c161596fc432b044d3a905311bcc9aab2081f251b57642d3d849dc289d3929"
+      url "https://github.com/k1LoW/trivy-db-to/releases/download/v2.0.1/trivy-db-to_v2.0.1_darwin_amd64.zip"
+      sha256 "d3887f24e5d907f46f53da63b94373f86c8956e169914162e906198174b96856"
 
       def install
         bin.install "trivy-db-to"
@@ -29,8 +29,8 @@ class TrivyDbTo < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/trivy-db-to/releases/download/v2.0.0/trivy-db-to_v2.0.0_linux_amd64.tar.gz"
-      sha256 "17c5f5bef57b789454700c1bd4189fd8243a687c1c7fc156d76a577dfce6a13b"
+      url "https://github.com/k1LoW/trivy-db-to/releases/download/v2.0.1/trivy-db-to_v2.0.1_linux_amd64.tar.gz"
+      sha256 "6b2cde22c96702c3a1b4c8efa525f90673a565553f1c233d91fc292a0217bf4c"
 
       def install
         bin.install "trivy-db-to"
