@@ -1,23 +1,23 @@
 class Calver < Formula
   desc 'calver package provides the ability to work with Calendar Versioning in Go.'
-  version '0.5.1'
+  version '0.6.0'
   homepage 'https://github.com/k1LoW/calver'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/calver/releases/download/v0.5.1/calver_v0.5.1_darwin_arm64.zip'
-      sha256 '1aa949abe9ef52a63efca36bd8b406e60c3b3ee913a7cf7d22cac5c9a249f283'
+      url 'https://github.com/k1LoW/calver/releases/download/v0.6.0/calver_v0.6.0_darwin_arm64.zip'
+      sha256 '358aba338df046f58bf18dca359ee76b98212ba75b524cf62fa3e09f10c44ead'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/calver/releases/download/v0.5.1/calver_v0.5.1_darwin_amd64.zip'
-      sha256 'a649c4c447c4e5f2cf4a95277c6e16c240f350b2d9a781ccfbac69b6083e3fca'
+      url 'https://github.com/k1LoW/calver/releases/download/v0.6.0/calver_v0.6.0_darwin_amd64.zip'
+      sha256 'bcaac08aa5c67ce800ddadd3558e558a99927952f9309dc7929809d25513223a'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/calver/releases/download/v0.5.1/calver_v0.5.1_linux_amd64.tar.gz'
-      sha256 '49640ac0ca280f712a1e25bd7ad20db636e078a8416a7ed0d33fa056f305f5c7'
+      url 'https://github.com/k1LoW/calver/releases/download/v0.6.0/calver_v0.6.0_linux_amd64.tar.gz'
+      sha256 '98514d414de86e2320bd07c78d5c51f0931f35191b74e4203a658c1598b4646d'
     end
   end
 
