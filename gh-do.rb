@@ -1,23 +1,23 @@
 class GhDo < Formula
   desc ':octocat: gh-do is a tool to do anything using GitHub credentials'
-  version '0.0.3'
+  version '0.1.1'
   homepage 'https://github.com/k1LoW/gh-do'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/gh-do/releases/download/v0.0.3/gh-do_v0.0.3_darwin_arm64.zip'
-      sha256 '36100dc1c366811f96fae67b98dfe3d19c084a6741fcf7a44bbfa8bf1f2db80e'
+      url 'https://github.com/k1LoW/gh-do/releases/download/v0.1.1/gh-do_v0.1.1_darwin_arm64.zip'
+      sha256 'b9570c32416ae505296062f4c7ffba113692d5e35dc9156b4433f11f25abdec5'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/gh-do/releases/download/v0.0.3/gh-do_v0.0.3_darwin_amd64.zip'
-      sha256 '790deb396e26b131661897d582d7d4371d90b6f5681723e8a77c04ef9cd34dff'
+      url 'https://github.com/k1LoW/gh-do/releases/download/v0.1.1/gh-do_v0.1.1_darwin_amd64.zip'
+      sha256 'b1c32aa8924d09929f753870ed2227a9c1850bfa97c7ef868a24f3c86f53a15d'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/gh-do/releases/download/v0.0.3/gh-do_v0.0.3_linux_amd64.tar.gz'
-      sha256 '904daaeb6da12302782006edb6110701d34dce9a4a4d6d926e7372ea511f751a'
+      url 'https://github.com/k1LoW/gh-do/releases/download/v0.1.1/gh-do_v0.1.1_linux_amd64.tar.gz'
+      sha256 '29a4f51ea0b9091ab780ab486d09048b6ec1ae9b7a8982acb2de30a5732a8e74'
     end
   end
 
