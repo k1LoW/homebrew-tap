@@ -21,6 +21,8 @@ class GhDo < Formula
     end
   end
 
+  depends_on 'gh'
+
   head do
     url 'https://github.com/k1LoW/gh-do.git'
     depends_on 'go' => :build
