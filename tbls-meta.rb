@@ -35,6 +35,6 @@ class TblsMeta < Formula
       system 'make', 'build'
     end
     bin.install 'tbls-meta'
-    generate_completions_from_executable(bin/'tbls-meta', 'completion', shells: %i[bash zsh])
+    generate_completions_from_executable(bin/'tbls-meta', 'completion')
   end
 end
