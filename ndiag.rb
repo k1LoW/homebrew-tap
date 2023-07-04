@@ -5,13 +5,13 @@
 class Ndiag < Formula
   desc "ndiag is a high-level architecture diagramming/documentation tool."
   homepage "https://github.com/k1LoW/ndiag"
-  version "0.14.4"
+  version "0.14.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/ndiag/releases/download/v0.14.4/ndiag_v0.14.4_darwin_arm64.zip"
-      sha256 "e2d33d3e6fe6544abb1e79bd042019449ce89172f1815de835cc64a1754558e8"
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.14.5/ndiag_v0.14.5_darwin_arm64.zip"
+      sha256 "d9f7cfbad06f6fc91ad265951156618a0bcfaff916bafd89888d27c79e3eccad"
 
       def install
         system './ndiag', 'completion', 'bash', '--out', 'ndiag.bash'
@@ -22,8 +22,8 @@ class Ndiag < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ndiag/releases/download/v0.14.4/ndiag_v0.14.4_darwin_amd64.zip"
-      sha256 "e509cc9c8aa211b5b4b61218d2bd38162f3caf59f9135957904da90ad976b19f"
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.14.5/ndiag_v0.14.5_darwin_amd64.zip"
+      sha256 "38326dc6278d2016445d5755a1dcb108e78a4827c62b8017e4facfaa337c8310"
 
       def install
         system './ndiag', 'completion', 'bash', '--out', 'ndiag.bash'
@@ -37,8 +37,8 @@ class Ndiag < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ndiag/releases/download/v0.14.4/ndiag_v0.14.4_linux_amd64.tar.gz"
-      sha256 "d09fde10b7d15efad80ab97cf0b7a20360466b1684a9fca100c2b6027d3a1070"
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.14.5/ndiag_v0.14.5_linux_amd64.tar.gz"
+      sha256 "5cdade4d70653ea1c7d882c2f44061e59051306ee5cf7fb82a15c4acb0fb3927"
 
       def install
         system './ndiag', 'completion', 'bash', '--out', 'ndiag.bash'
