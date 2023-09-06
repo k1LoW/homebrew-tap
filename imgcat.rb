@@ -4,7 +4,7 @@ class Imgcat < Formula
   version '1.0.0'
 
   url 'https://iterm2.com/utilities/imgcat'
-  sha256 'b8fd783db29dbdd8a84beabbc251544dcc26bafad3b20c9ff32db7e8c7cd2869'
+  sha256 '49945beb679baaccfc089d2f3e57c0aedeb4f6bf4c7c53ca261ad664018edab4'
 
   def install
     bin.install 'imgcat'
