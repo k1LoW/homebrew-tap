@@ -1,14 +1,14 @@
 class Alp < Formula
   desc 'Access Log Profiler'
   homepage 'https://github.com/tkuchiki/alp'
-  version '1.0.16'
+  version '1.0.17'
 
   if OS.mac?
-    url 'https://github.com/tkuchiki/alp/releases/download/v1.0.16/alp_darwin_amd64.tar.gz'
-    sha256 '6af543c2d8a7ea26b9441722f7675bca9676f7bbcad0a9386dbe2813a0d7dbfc'
+    url 'https://github.com/tkuchiki/alp/releases/download/v1.0.17/alp_darwin_amd64.tar.gz'
+    sha256 'a6818ec7d3be2fd82974fb0aa8eae1f872b0e8ad3d09c9ff66f39c5fd1c7afa3'
   elsif OS.linux?
-    url 'https://github.com/tkuchiki/alp/releases/download/v1.0.16/alp_linux_amd64.tar.gz'
-    sha256 'eb79c24e83824217b1d9532692523c9cd4b55474d7ff3fded8bb2dd58042233a'
+    url 'https://github.com/tkuchiki/alp/releases/download/v1.0.17/alp_linux_amd64.tar.gz'
+    sha256 '709403d3d424e570cca266e94b70e9339ed3998e1b03f202808d36a6816c956e'
   end
 
   def install
