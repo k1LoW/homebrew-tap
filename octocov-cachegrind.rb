@@ -1,27 +1,27 @@
 class OctocovCachegrind < Formula
   desc 'Generate octocov custom metrics JSON from the output of `valgrind --tool=cachegrind`.'
-  version '0.1.1'
+  version '0.1.2'
   homepage 'https://github.com/k1LoW/octocov-cachegrind'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.1.1/octocov-cachegrind_v0.1.1_darwin_arm64.zip'
-      sha256 'faf978261ba6c02fbfbb99214bf63ab16a7a9dad1c13c00b79fc5ffd514e975c'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.1.2/octocov-cachegrind_v0.1.2_darwin_arm64.zip'
+      sha256 '19550f20a6270fd8d9e5c6cbd48adc0f915e880d0e3a6163b833554759779f4c'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.1.1/octocov-cachegrind_v0.1.1_darwin_amd64.zip'
-      sha256 '1163a384bd258a1b41b33f4fdbf36478ddd45062183ddd6140016aab2ca6b3ea'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.1.2/octocov-cachegrind_v0.1.2_darwin_amd64.zip'
+      sha256 '2d665aa2abf82088c183deff5da7b10c9500005c8e89d64c7c94278edf85481f'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.1.1/octocov-cachegrind_v0.1.1_linux_arm64.tar.gz'
-      sha256 '0c560e99c7e3226249ff602c6ec3d9c6c2a82486f147aeb87a4a349541063e62'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.1.2/octocov-cachegrind_v0.1.2_linux_arm64.tar.gz'
+      sha256 '5afdd5331be9396f8ad13b261de63f7d3f7d6a3ec8dab7ec620f0524ff36162e'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.1.1/octocov-cachegrind_v0.1.1_linux_amd64.tar.gz'
-      sha256 '24e5384f6228291ced98f58e6669a9dbad8336d6676364e070af75d329bfff1a'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.1.2/octocov-cachegrind_v0.1.2_linux_amd64.tar.gz'
+      sha256 '3ae8545d5a9911f5c50b0e5feb0bfd3598a650c3d99c460ddf61d51410d59d15'
     end
   end
 
