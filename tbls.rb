@@ -1,27 +1,27 @@
 class Tbls < Formula
   desc 'tbls is a CI-Friendly tool for document a database, written in Go.'
-  version '1.71.1'
+  version '1.72.0'
   homepage 'https://github.com/k1LoW/tbls'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tbls/releases/download/v1.71.1/tbls_v1.71.1_darwin_arm64.zip'
-      sha256 '2e4e3f903c3c78f9a1e91498d3dc276219670759181da48c88077b11d9c6e47d'
+      url 'https://github.com/k1LoW/tbls/releases/download/v1.72.0/tbls_v1.72.0_darwin_arm64.zip'
+      sha256 '0f8f2d92f7782e476c74f768389ded493ef00e2baac126f48194346b6497bf4a'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls/releases/download/v1.71.1/tbls_v1.71.1_darwin_amd64.zip'
-      sha256 '597104ae10a263191ad5a7f3d26035a3bc7c63927f432eb213277b93a3a3338c'
+      url 'https://github.com/k1LoW/tbls/releases/download/v1.72.0/tbls_v1.72.0_darwin_amd64.zip'
+      sha256 '78c17493b611fda57ab81073687d74d1d8319d7a0755534323a47494379ff049'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tbls/releases/download/v1.71.1/tbls_v1.71.1_linux_arm64.tar.gz'
-      sha256 '92781db42dadca645b79b537899a066a30ab476acfce30fed5b94a2c0f24591b'
+      url 'https://github.com/k1LoW/tbls/releases/download/v1.72.0/tbls_v1.72.0_linux_arm64.tar.gz'
+      sha256 '566ecb27d639f781e0ba795b31482ab7d4275627ca3fa95f2b6c9db474838c33'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls/releases/download/v1.71.1/tbls_v1.71.1_linux_amd64.tar.gz'
-      sha256 '5455f20de2735c4ebe637ed03055b347efee6e42abf964a2f3cedbdd484ec1ba'
+      url 'https://github.com/k1LoW/tbls/releases/download/v1.72.0/tbls_v1.72.0_linux_amd64.tar.gz'
+      sha256 '12824108e712f2f8d21258e7c69896460573a58c286053ba419c09301176b6e9'
     end
   end
 
