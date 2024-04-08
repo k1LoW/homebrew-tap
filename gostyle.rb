@@ -1,26 +1,26 @@
 class Gostyle < Formula
-  version '0.19.0'
+  version '0.19.1'
   homepage 'https://github.com/k1LoW/gostyle'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/gostyle/releases/download/v0.19.0/gostyle_v0.19.0_darwin_arm64.zip'
-      sha256 'c3b284b160d3c41268e0358a8fa96bd57ca252807a7908ecd2d12bec2c6a68de'
+      url 'https://github.com/k1LoW/gostyle/releases/download/v0.19.1/gostyle_v0.19.1_darwin_arm64.zip'
+      sha256 '309e8617161a8ab0257bc0cfcbcbe38ecaa6d7793e0e2345645f5ea6844a375f'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/gostyle/releases/download/v0.19.0/gostyle_v0.19.0_darwin_amd64.zip'
-      sha256 '93f74924ed9f6649c4c4ed7dd0bbc534ed9a9eb6c1e79d125d615e1ca7136255'
+      url 'https://github.com/k1LoW/gostyle/releases/download/v0.19.1/gostyle_v0.19.1_darwin_amd64.zip'
+      sha256 '711759d1250f86955983106e1f7e488c754a6d5e982e16076e6fb119890d6ac1'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/gostyle/releases/download/v0.19.0/gostyle_v0.19.0_linux_arm64.tar.gz'
-      sha256 '700313fe7beb7914438156e9782144b592aad3b6e383d126d9b5202288ad7938'
+      url 'https://github.com/k1LoW/gostyle/releases/download/v0.19.1/gostyle_v0.19.1_linux_arm64.tar.gz'
+      sha256 '984bb17d63e1e5fd6f50ae65100665bb2bd27f818ff9bc0f63b050f7875b5ac7'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/gostyle/releases/download/v0.19.0/gostyle_v0.19.0_linux_amd64.tar.gz'
-      sha256 'd281258be38d14f833dc6fa3da52bee5e56759da95db3f8d1a1fa791f02823a4'
+      url 'https://github.com/k1LoW/gostyle/releases/download/v0.19.1/gostyle_v0.19.1_linux_amd64.tar.gz'
+      sha256 '3e739a58745b163044719167ed8cf495c8914b1e5d014b44a93463b7066f9785'
     end
   end
 
