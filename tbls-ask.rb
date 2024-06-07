@@ -1,27 +1,27 @@
 class TblsAsk < Formula
   desc 'tbls-ask is an external subcommand of tbls for asking OpenAI using the datasource.'
-  version '0.0.6'
+  version '0.1.0'
   homepage 'https://github.com/k1LoW/tbls-ask'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tbls-ask/releases/download/v0.0.6/tbls-ask_v0.0.6_darwin_arm64.zip'
-      sha256 '249ee9b3afaed72b1263fcab6e2036cb34a1a186222d7695f8d9c0431b774a2f'
+      url 'https://github.com/k1LoW/tbls-ask/releases/download/v0.1.0/tbls-ask_v0.1.0_darwin_arm64.zip'
+      sha256 '28c8d0ed97d3663463d0c576eb771dd1005b9e560fa0fd622498377e336ab0fb'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls-ask/releases/download/v0.0.6/tbls-ask_v0.0.6_darwin_amd64.zip'
-      sha256 '5ed591857cff554eb7e76112bc77ac8e217d0afb0856d607ee3bff52d24521e4'
+      url 'https://github.com/k1LoW/tbls-ask/releases/download/v0.1.0/tbls-ask_v0.1.0_darwin_amd64.zip'
+      sha256 'de4f7f7cd0b8dff3e63b738b0482f5889b1f8b42dd3ccd3cba385dd23c7dd090'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tbls-ask/releases/download/v0.0.6/tbls-ask_v0.0.6_linux_arm64.tar.gz'
-      sha256 '9e00af3247f5b711a99faac52b115de768f699a28f3addde143d324656baa8cc'
+      url 'https://github.com/k1LoW/tbls-ask/releases/download/v0.1.0/tbls-ask_v0.1.0_linux_arm64.tar.gz'
+      sha256 '2724f847d5657f4b5a66cf1d2943c86317d706284ccb98a4f77e3400a94335f6'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls-ask/releases/download/v0.0.6/tbls-ask_v0.0.6_linux_amd64.tar.gz'
-      sha256 'f95142de652f0235b148d0407d9da187a3f3564908c2c231a1759408c426ae1a'
+      url 'https://github.com/k1LoW/tbls-ask/releases/download/v0.1.0/tbls-ask_v0.1.0_linux_amd64.tar.gz'
+      sha256 '92ded6afa13a9fc1695324a8bb2ceac155dac34f0de6078de4b81488f467a9a2'
     end
   end
 
