@@ -5,21 +5,21 @@
 class Awsdo < Formula
   desc "awsdo is a tool to do anything using AWS temporary credentials."
   homepage "https://github.com/k1LoW/awsdo"
-  version "0.11.1"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/awsdo/releases/download/v0.11.1/awsdo_v0.11.1_darwin_arm64.zip"
-      sha256 "1824c714a954b449c6950dffe8b438f3aec4c27fe0f9a50023d9306ac096d0d0"
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.13.0/awsdo_v0.13.0_darwin_arm64.zip"
+      sha256 "83e4d62c75c355c2aa7edc6c69ce796ad9808509c3655f6cddbff5b405f30834"
 
       def install
         bin.install "awsdo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/awsdo/releases/download/v0.11.1/awsdo_v0.11.1_darwin_amd64.zip"
-      sha256 "961c941c0cfbfe7e65298c7fddb7f916202c54d0103a7e1e770ffae7127e4e43"
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.13.0/awsdo_v0.13.0_darwin_amd64.zip"
+      sha256 "852952749e0926425debe8e62edd9cf9e0325172814022b76a8385296ad28c86"
 
       def install
         bin.install "awsdo"
@@ -29,16 +29,16 @@ class Awsdo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k1LoW/awsdo/releases/download/v0.11.1/awsdo_v0.11.1_linux_arm64.tar.gz"
-      sha256 "6db72aad12647bc2822d28e2605f1ea12552be1182ac9fa09fa3e8d45821cd1e"
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.13.0/awsdo_v0.13.0_linux_arm64.tar.gz"
+      sha256 "795e04813e7688e2b2605236a4a52c991f927e8d065c746ef1085e2312a912ee"
 
       def install
         bin.install "awsdo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/awsdo/releases/download/v0.11.1/awsdo_v0.11.1_linux_amd64.tar.gz"
-      sha256 "40caa3400d4ffd2879fad5c1d70dce39660a1d9fe85224fd17b926897f9e7cfa"
+      url "https://github.com/k1LoW/awsdo/releases/download/v0.13.0/awsdo_v0.13.0_linux_amd64.tar.gz"
+      sha256 "72e6dbbbf40dcc40101ef41c65a3f1f1a8431f968a821927379bb0757c77df73"
 
       def install
         bin.install "awsdo"

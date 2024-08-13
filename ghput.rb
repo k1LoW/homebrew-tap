@@ -5,14 +5,14 @@
 class Ghput < Formula
   desc "ghput is a CI-friendly tool that puts * on GitHub."
   homepage "https://github.com/k1LoW/ghput"
-  version "0.13.0"
+  version "0.14.4"
   license "MIT"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/ghput/releases/download/v0.13.0/ghput_v0.13.0_darwin_arm64.zip"
-      sha256 "db4016ca8266143b991790216284774f79e48388a95b5ef4c988ccd73acc5af5"
+      url "https://github.com/k1LoW/ghput/releases/download/v0.14.4/ghput_v0.14.4_darwin_arm64.zip"
+      sha256 "d7a1ad6ce0f468573ec9117354e4da75e4fb1734bf2023d5207970c5c2551210"
 
       def install
         system './ghput', 'completion', 'bash', '--out', 'ghput.bash'
@@ -23,8 +23,8 @@ class Ghput < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ghput/releases/download/v0.13.0/ghput_v0.13.0_darwin_amd64.zip"
-      sha256 "d2e90e4d15e33d4e10c8c7da3d03e2bb8ac85be23eeb81c6c7059f4156f755b9"
+      url "https://github.com/k1LoW/ghput/releases/download/v0.14.4/ghput_v0.14.4_darwin_amd64.zip"
+      sha256 "c0b4c5cf6356865563f9d7b5dbc8f8314dea13a09095dad229902879b804013d"
 
       def install
         system './ghput', 'completion', 'bash', '--out', 'ghput.bash'
