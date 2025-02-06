@@ -1,26 +1,26 @@
 class Roots < Formula
-  version '0.1.2'
+  version '0.2.0'
   homepage 'https://github.com/k1LoW/roots'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/roots/releases/download/v0.1.2/roots_v0.1.2_darwin_arm64.zip'
-      sha256 'f0728b7ffc245cdc1d34362896be761d112d1f741ae7840625d83b4b7b797ddf'
+      url 'https://github.com/k1LoW/roots/releases/download/v0.2.0/roots_v0.2.0_darwin_arm64.zip'
+      sha256 '6e18097e3643e41cbd711493eda31dfdceff85502afd71e638c6551f2bec5da7'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/roots/releases/download/v0.1.2/roots_v0.1.2_darwin_amd64.zip'
-      sha256 'f04de5ae50cb53d021c2e26f3f22d183a9191d50a04c6438c26127d8873d7d3d'
+      url 'https://github.com/k1LoW/roots/releases/download/v0.2.0/roots_v0.2.0_darwin_amd64.zip'
+      sha256 'ea69c36ecc05f2d049be7f74aac0e880d1b61b0965cdb120aaceba8c7fc441f2'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/roots/releases/download/v0.1.2/roots_v0.1.2_linux_arm64.tar.gz'
-      sha256 '1d61e3c1f460b3e976a33833b50ad8e94ca6b38b68ae0f53084137cd799d209a'
+      url 'https://github.com/k1LoW/roots/releases/download/v0.2.0/roots_v0.2.0_linux_arm64.tar.gz'
+      sha256 '8653dbe064f145e749981499d3a141177a4b0fde108154efe15289252eb2f5ca'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/roots/releases/download/v0.1.2/roots_v0.1.2_linux_amd64.tar.gz'
-      sha256 'dcf7940e5aa4428de8eb07e02269a5c83fc7c0215a5c5bf18b8b4cdbbc80d38f'
+      url 'https://github.com/k1LoW/roots/releases/download/v0.2.0/roots_v0.2.0_linux_amd64.tar.gz'
+      sha256 'd56f757e8ac47193f528fee8ddca63ddf090ab07de47a2b269ab900e3728e3d0'
     end
   end
 
