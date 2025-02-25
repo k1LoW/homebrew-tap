@@ -1,27 +1,27 @@
 class TblsDriverTailordb < Formula
   desc 'tbls driver for TailorDB schema definition'
-  version '0.2.0'
+  version '0.2.2'
   homepage 'https://github.com/k1LoW/tbls-driver-tailordb'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tbls-driver-tailordb/releases/download/v0.2.0/tbls-driver-tailordb_v0.2.0_darwin_arm64.zip'
-      sha256 'f37eba308352e41b5fc963988399789d47a7e2ba27e2ba5bef079315fb72731b'
+      url 'https://github.com/k1LoW/tbls-driver-tailordb/releases/download/v0.2.2/tbls-driver-tailordb_v0.2.2_darwin_arm64.zip'
+      sha256 'adf361403867ba4dd6acecb3029e72fabbd5fc017f8c49f3f604ac0c9ed93bef'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls-driver-tailordb/releases/download/v0.2.0/tbls-driver-tailordb_v0.2.0_darwin_amd64.zip'
-      sha256 'a9af6a9bb61749b589fff381e8eb723c746996f48f05fdbcb29ad3fec4d95e4a'
+      url 'https://github.com/k1LoW/tbls-driver-tailordb/releases/download/v0.2.2/tbls-driver-tailordb_v0.2.2_darwin_amd64.zip'
+      sha256 '25b0cbcac53df61aa394c007e09bc43f13a8f8de525ac05949a0d53ed5fbf510'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tbls-driver-tailordb/releases/download/v0.2.0/tbls-driver-tailordb_v0.2.0_linux_arm64.tar.gz'
-      sha256 'd5a4c50499983ba4a4e7931199314aec4bf1bb435c2f92c3bbe7b65c849066b0'
+      url 'https://github.com/k1LoW/tbls-driver-tailordb/releases/download/v0.2.2/tbls-driver-tailordb_v0.2.2_linux_arm64.tar.gz'
+      sha256 '63e17fc69f998e3edd9dcb74c0bb66fbf82b9aee2641cec6ed35b3de76f9051d'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls-driver-tailordb/releases/download/v0.2.0/tbls-driver-tailordb_v0.2.0_linux_amd64.tar.gz'
-      sha256 '36c5f468885a7bd0487fa684ea6d79a6be6438c017e7db2a40455c9d88fae80d'
+      url 'https://github.com/k1LoW/tbls-driver-tailordb/releases/download/v0.2.2/tbls-driver-tailordb_v0.2.2_linux_amd64.tar.gz'
+      sha256 'e4b69a57a575774d7f655ce1e65aa5cbf374b37a3bfea2e2a6b343d120be080b'
     end
   end
 
