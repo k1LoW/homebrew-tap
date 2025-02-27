@@ -1,27 +1,27 @@
 class Cuestr < Formula
   desc 'cuestr is a utility tool for string literals in CUE files.'
-  version '0.3.1'
+  version '0.4.0'
   homepage 'https://github.com/k1LoW/cuestr'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/cuestr/releases/download/v0.3.1/cuestr_v0.3.1_darwin_arm64.zip'
-      sha256 '1e051a2fdce619f892462fe02ee4b2ffa1f1cb71d785d335340c447f36d6af45'
+      url 'https://github.com/k1LoW/cuestr/releases/download/v0.4.0/cuestr_v0.4.0_darwin_arm64.zip'
+      sha256 '895d30d83a59cbda7a654454eed1d5159402c526e9c3a2108b836bc9d485c5cd'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/cuestr/releases/download/v0.3.1/cuestr_v0.3.1_darwin_amd64.zip'
-      sha256 'eba38a324864743bf8b8abab14692b2c6fb6e0cb42f86a754423a271f9e0cd29'
+      url 'https://github.com/k1LoW/cuestr/releases/download/v0.4.0/cuestr_v0.4.0_darwin_amd64.zip'
+      sha256 'ac6472e9f6aec3e3641750e9f0b39a8dd9e00080c3e2107bbe02b1737c312bbc'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/cuestr/releases/download/v0.3.1/cuestr_v0.3.1_linux_arm64.tar.gz'
-      sha256 '5b59d29ff8eafe94f8f18625b3c0455eb80e58bece199201347d5260eb101abe'
+      url 'https://github.com/k1LoW/cuestr/releases/download/v0.4.0/cuestr_v0.4.0_linux_arm64.tar.gz'
+      sha256 'b52e9b6e499ed493a4ad35ab779accd2f0bbd2a3576635ee90dbb6347029eef7'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/cuestr/releases/download/v0.3.1/cuestr_v0.3.1_linux_amd64.tar.gz'
-      sha256 '779f7171f273a77dc6c862793e536acb85740575fba2cc7155ddcdeae6caf3f0'
+      url 'https://github.com/k1LoW/cuestr/releases/download/v0.4.0/cuestr_v0.4.0_linux_amd64.tar.gz'
+      sha256 '3cb21b118278371fa1d64106e35d0bbd0f38bd29ffef8d93d34dc5e7a1463d2b'
     end
   end
 
