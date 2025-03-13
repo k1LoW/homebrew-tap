@@ -1,23 +1,23 @@
 class Octoslack < Formula
   desc 'octoslack is a tool for transforming HTTP requests from any webhook into Slack messages.'
-  version '0.11.1'
+  version '0.12.0'
   homepage 'https://github.com/k1LoW/octoslack'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/octoslack/releases/download/v0.11.1/octoslack_v0.11.1_darwin_arm64.zip'
-      sha256 'cc200bc166907c222355d1d68a20a2219af22debed1caf050ca3352a7c02e2b9'
+      url 'https://github.com/k1LoW/octoslack/releases/download/v0.12.0/octoslack_v0.12.0_darwin_arm64.zip'
+      sha256 '143ca87c25ffa0e7f5df5717d2aec4f011cf59dcbe77c49991dcfcacefb4a483'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octoslack/releases/download/v0.11.1/octoslack_v0.11.1_darwin_amd64.zip'
-      sha256 'd2978f4a0f669e40821eb8cbca0b2f6c5aecf077f271509e910b8cb3c4f4efcd'
+      url 'https://github.com/k1LoW/octoslack/releases/download/v0.12.0/octoslack_v0.12.0_darwin_amd64.zip'
+      sha256 'aecfeba750e88093a460c1082768426812efa6a66afdb0177abd7be6cc249046'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octoslack/releases/download/v0.11.1/octoslack_v0.11.1_linux_amd64.tar.gz'
-      sha256 '2724a9b5879f8167412241af6336702f1ca24b7879dbd48fe05d0b596cc35a9e'
+      url 'https://github.com/k1LoW/octoslack/releases/download/v0.12.0/octoslack_v0.12.0_linux_amd64.tar.gz'
+      sha256 '0dde63b20f6fc97cfa630442ca9b8a55e083bc027947d985231b102766af2ef8'
     end
   end
 
