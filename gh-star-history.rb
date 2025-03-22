@@ -5,21 +5,21 @@
 class GhStarHistory < Formula
   desc "Show star history of repositories."
   homepage "https://github.com/k1LoW/gh-star-history"
-  version "0.2.4"
+  version "0.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/gh-star-history/releases/download/v0.2.4/gh-star-history_v0.2.4_darwin_arm64.zip"
-      sha256 "d6411c181d201ad1281ca59e91dbafdd018de0f3a8569b96f6dc4ebb1352f63f"
+      url "https://github.com/k1LoW/gh-star-history/releases/download/v0.2.6/gh-star-history_v0.2.6_darwin_arm64.zip"
+      sha256 "83e3d16421ee7820ee5c16de1722b547c7869afd6e1d3bd139c3b6f5f2d914bf"
 
       def install
         bin.install "gh-star-history"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/gh-star-history/releases/download/v0.2.4/gh-star-history_v0.2.4_darwin_amd64.zip"
-      sha256 "a9e2f719af9c736b2888d6bb30776a4853ee474cb0d000d4eacb8199816fd95d"
+      url "https://github.com/k1LoW/gh-star-history/releases/download/v0.2.6/gh-star-history_v0.2.6_darwin_amd64.zip"
+      sha256 "8af744b1ae9df7b99f06c458cf2bd6438d45b1a9149bdbf201e2720e2f5d56fb"
 
       def install
         bin.install "gh-star-history"
@@ -29,8 +29,8 @@ class GhStarHistory < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/gh-star-history/releases/download/v0.2.4/gh-star-history_v0.2.4_linux_amd64.tar.gz"
-      sha256 "7a09fdd617632da16203aea5f21c3558bdeeb4163fa7e69f622c00ed037a9476"
+      url "https://github.com/k1LoW/gh-star-history/releases/download/v0.2.6/gh-star-history_v0.2.6_linux_amd64.tar.gz"
+      sha256 "c5caf9e930e0a4c99dc89a353e564d1e44338c430bdb1549fa7ec7a5e81f8a90"
 
       def install
         bin.install "gh-star-history"
