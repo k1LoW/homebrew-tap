@@ -1,27 +1,27 @@
 class Coglet < Formula
   desc 'coglet is a tool for User pool of Amazon Cognito.'
-  version '0.0.3'
+  version '0.1.0'
   homepage 'https://github.com/k1LoW/coglet'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/coglet/releases/download/v0.0.3/coglet_v0.0.3_darwin_arm64.zip'
-      sha256 '8ba71ff852016565771847864cb56e386347d016885ade86f7123266be830bc8'
+      url 'https://github.com/k1LoW/coglet/releases/download/v0.1.0/coglet_v0.1.0_darwin_arm64.zip'
+      sha256 'f72cc65e6dd27d612724150d9cf45becd1612c6c8b9167b9e7033b0136f480f6'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/coglet/releases/download/v0.0.3/coglet_v0.0.3_darwin_amd64.zip'
-      sha256 '0df2e79e0448bfc366d70d399b3dc7eb71f2b8bcaecf55da3da12ca8e30d5eba'
+      url 'https://github.com/k1LoW/coglet/releases/download/v0.1.0/coglet_v0.1.0_darwin_amd64.zip'
+      sha256 'bf6e42c5242527e84bb4602de83a9514bf9d4b243c3749483bea2e953d1ded46'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/coglet/releases/download/v0.0.3/coglet_v0.0.3_linux_arm64.tar.gz'
-      sha256 'a1c3310626ddb2f5eb97640d3f2139bdede36a96a0ecb5a1fd1be931973648f0'
+      url 'https://github.com/k1LoW/coglet/releases/download/v0.1.0/coglet_v0.1.0_linux_arm64.tar.gz'
+      sha256 '65ace2cbd1d5864ff4063bb85811faf5104ee849f42aaed1478b8a242cbf5b27'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/coglet/releases/download/v0.0.3/coglet_v0.0.3_linux_amd64.tar.gz'
-      sha256 '28460ec3dfe8bd44f428c98d731be316fad04c5cea20c4b895711732514bb658'
+      url 'https://github.com/k1LoW/coglet/releases/download/v0.1.0/coglet_v0.1.0_linux_amd64.tar.gz'
+      sha256 'a6d9bc018e8c1f8aa3a273865fd83180e8102b4609b7609d33179b77e548b6d2'
     end
   end
 
