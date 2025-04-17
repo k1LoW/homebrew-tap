@@ -1,27 +1,27 @@
 class Tmpmod < Formula
   desc 'tmpmod is a tool for temporary use of modified modules.'
-  version '0.4.1'
+  version '0.4.2'
   homepage 'https://github.com/k1LoW/tmpmod'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tmpmod/releases/download/v0.4.1/tmpmod_v0.4.1_darwin_arm64.zip'
-      sha256 '1ebb7ca43e3db013bc3d6ceafcebe9d201e8a1ec9bbe38ba8a8260e5c9135e51'
+      url 'https://github.com/k1LoW/tmpmod/releases/download/v0.4.2/tmpmod_v0.4.2_darwin_arm64.zip'
+      sha256 '97618e5870255d014f3e835b1e58762a3c876c89f53eb34933bccd8c4fc3de65'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tmpmod/releases/download/v0.4.1/tmpmod_v0.4.1_darwin_amd64.zip'
-      sha256 '6ebedb3e3af87a44e3aba5744637b64559e36a8beebfa0390aab329a0eceaadd'
+      url 'https://github.com/k1LoW/tmpmod/releases/download/v0.4.2/tmpmod_v0.4.2_darwin_amd64.zip'
+      sha256 '46a45e5d99fc781728d69a857256bd5f2a8de0344952d68c095cb38171893354'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tmpmod/releases/download/v0.4.1/tmpmod_v0.4.1_linux_arm64.tar.gz'
-      sha256 '257c822d9405e95714956285e2ab762cb8220a5b0d3284be7460420e0640d4b3'
+      url 'https://github.com/k1LoW/tmpmod/releases/download/v0.4.2/tmpmod_v0.4.2_linux_arm64.tar.gz'
+      sha256 '3356576c7e619264ee5d38c1e9572d6f3a186a44c715972a5d92ab249f2d6f8d'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tmpmod/releases/download/v0.4.1/tmpmod_v0.4.1_linux_amd64.tar.gz'
-      sha256 'ba36a033f2d085f555f3e8f0cd75b5c11fca429d02906f4583a1fd21def03f00'
+      url 'https://github.com/k1LoW/tmpmod/releases/download/v0.4.2/tmpmod_v0.4.2_linux_amd64.tar.gz'
+      sha256 '70b09d435e85fc3b6143afe943d7e77a2c0f0710bb7592cd5770b34d75d86a29'
     end
   end
 
