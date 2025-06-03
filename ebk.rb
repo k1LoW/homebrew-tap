@@ -5,21 +5,21 @@
 class Ebk < Formula
   desc "ebk is a tiny tool for ebook."
   homepage "https://github.com/k1LoW/ebk"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/ebk/releases/download/v0.2.2/ebk_v0.2.2_darwin_arm64.zip"
-      sha256 "e0565aef7ebf7384b09695d20db7c4303ca8544165d1f3c774c5ebe2a23061b1"
+      url "https://github.com/k1LoW/ebk/releases/download/v0.2.3/ebk_v0.2.3_darwin_arm64.zip"
+      sha256 "b1c7787f63fe23ca3e4e46f55c44e3bc7eb465327d7d86f1cd4bd6d2c20e2e71"
 
       def install
         bin.install "ebk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ebk/releases/download/v0.2.2/ebk_v0.2.2_darwin_amd64.zip"
-      sha256 "bf14e380bc455befb587b0454e2f9bb0ccf183e7b943e6ab0d08ac53178e849a"
+      url "https://github.com/k1LoW/ebk/releases/download/v0.2.3/ebk_v0.2.3_darwin_amd64.zip"
+      sha256 "95b02139906c0b40cdf8080ad92fb24356f34f8420bfff587b7e4170a46ea40e"
 
       def install
         bin.install "ebk"
@@ -29,8 +29,8 @@ class Ebk < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ebk/releases/download/v0.2.2/ebk_v0.2.2_linux_amd64.tar.gz"
-      sha256 "6fc5564846ecfef7b45a76d58a0161685fc25f249d1299ffd5a9b6131dbd161c"
+      url "https://github.com/k1LoW/ebk/releases/download/v0.2.3/ebk_v0.2.3_linux_amd64.tar.gz"
+      sha256 "48bb3be447617ee6a167780d39caef6135f3180d0ce90363c28b8ed79e05ab9f"
 
       def install
         bin.install "ebk"
