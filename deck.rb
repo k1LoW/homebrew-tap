@@ -1,27 +1,27 @@
 class Deck < Formula
   desc 'deck is a tool for creating deck using Google Slides.'
-  version '0.23.0'
+  version '0.24.0'
   homepage 'https://github.com/k1LoW/deck'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/deck/releases/download/v0.23.0/deck_v0.23.0_darwin_arm64.zip'
-      sha256 '7882297beefa78e1375493c164e0229be54b330ffe293563ee8c5782eec0d7b4'
+      url 'https://github.com/k1LoW/deck/releases/download/v0.24.0/deck_v0.24.0_darwin_arm64.zip'
+      sha256 '8f32d92f4906cf4f93b142df1ccd42743861c68c75103a24bf18d2dbd789bb1e'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/deck/releases/download/v0.23.0/deck_v0.23.0_darwin_amd64.zip'
-      sha256 '7063766e2f671ec6b90942bcb9d6a7b1e10574a28a3374ea78d89d459caa696e'
+      url 'https://github.com/k1LoW/deck/releases/download/v0.24.0/deck_v0.24.0_darwin_amd64.zip'
+      sha256 'a769d1eec08da52f7cb107f08d97b64aeb2ecf846a858f76e9c5e6a3ca21c64c'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/deck/releases/download/v0.23.0/deck_v0.23.0_linux_arm64.tar.gz'
-      sha256 '5e4f2e4c5674bca6f2fa7739cf36c9cc5407900b1f5ed687bdccb966060522a3'
+      url 'https://github.com/k1LoW/deck/releases/download/v0.24.0/deck_v0.24.0_linux_arm64.tar.gz'
+      sha256 '1cc3b890fe790943fd246f613321f01e5b0ff9dcc714a5fe25704b5909b3e30c'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/deck/releases/download/v0.23.0/deck_v0.23.0_linux_amd64.tar.gz'
-      sha256 '7ecf2ca994319a9477b21c12fd9d7aafbcf708e946ae6cb5d6ae1913980c1b19'
+      url 'https://github.com/k1LoW/deck/releases/download/v0.24.0/deck_v0.24.0_linux_amd64.tar.gz'
+      sha256 '4a6e6dd479626c924e25d01d4c77269be9ad50a66a4ad2f45e22aab04289ed52'
     end
   end
 
