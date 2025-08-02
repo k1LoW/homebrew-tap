@@ -3,6 +3,8 @@ class Deck < Formula
   version '1.7.0'
   homepage 'https://github.com/k1LoW/deck'
 
+  deprecate! date: "2025-08-02", because: "please use the official Homebrew formula instead"
+
   on_macos do
     if Hardware::CPU.arm?
       url 'https://github.com/k1LoW/deck/releases/download/v1.7.0/deck_v1.7.0_darwin_arm64.zip'

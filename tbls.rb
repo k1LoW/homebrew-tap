@@ -3,6 +3,8 @@ class Tbls < Formula
   version '1.86.1'
   homepage 'https://github.com/k1LoW/tbls'
 
+  deprecate! date: "2025-08-02", because: "please use the official Homebrew formula instead"
+
   on_macos do
     if Hardware::CPU.arm?
       url 'https://github.com/k1LoW/tbls/releases/download/v1.86.1/tbls_v1.86.1_darwin_arm64.zip'
