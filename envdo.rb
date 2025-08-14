@@ -1,26 +1,26 @@
 class Envdo < Formula
-  version '0.0.1'
+  version '0.1.0'
   homepage 'https://github.com/k1LoW/envdo'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/envdo/releases/download/v0.0.1/envdo_v0.0.1_darwin_arm64.zip'
-      sha256 'f666f7abb149e5cbd31cf7e8e99259bc452f0a0e30b42201a5e2b2259cf4866d'
+      url 'https://github.com/k1LoW/envdo/releases/download/v0.1.0/envdo_v0.1.0_darwin_arm64.zip'
+      sha256 '04621a3c1a16938e0e29c11a933d8061b210b875852dfc2dbd68071223573caa'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/envdo/releases/download/v0.0.1/envdo_v0.0.1_darwin_amd64.zip'
-      sha256 '40f585ff2e70226891f4ecc11af26f33ff140dc6b6923b82a5ecc94db2a926d3'
+      url 'https://github.com/k1LoW/envdo/releases/download/v0.1.0/envdo_v0.1.0_darwin_amd64.zip'
+      sha256 '7f43611614e9d604244272c70014d84124da2279a54398c863802576e37ce494'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/envdo/releases/download/v0.0.1/envdo_v0.0.1_linux_arm64.tar.gz'
-      sha256 'f0c54dbe86ba3eebbbdfc214701bbfa0209a797985e7d3cb3e66d4a789a4e54f'
+      url 'https://github.com/k1LoW/envdo/releases/download/v0.1.0/envdo_v0.1.0_linux_arm64.tar.gz'
+      sha256 'bf2321489f6601e2d9eedb4864fbc96c8f85adef6550632bd6eeba831c749606'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/envdo/releases/download/v0.0.1/envdo_v0.0.1_linux_amd64.tar.gz'
-      sha256 '559a125ca50201c501c636052e374a0908e320ffaae483aa4683abcdfab796f2'
+      url 'https://github.com/k1LoW/envdo/releases/download/v0.1.0/envdo_v0.1.0_linux_amd64.tar.gz'
+      sha256 '75f95fde1067553dbbc3c8c4b3e243f3ea31a4e057d52093bbc0076d628819ed'
     end
   end
 
