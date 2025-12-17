@@ -1,27 +1,27 @@
 class OctocovGoTestBench < Formula
   desc 'Generate custom metrics JSON from the output of `go test -bench`.'
-  version '1.7.2'
+  version '1.7.3'
   homepage 'https://github.com/k1LoW/octocov-go-test-bench'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/octocov-go-test-bench/releases/download/v1.7.2/octocov-go-test-bench_v1.7.2_darwin_arm64.zip'
-      sha256 '56cdddf3c2b0d6437b84c635c1bffe097f90ea13f99ce0b8d98b4d01d503c7d5'
+      url 'https://github.com/k1LoW/octocov-go-test-bench/releases/download/v1.7.3/octocov-go-test-bench_v1.7.3_darwin_arm64.zip'
+      sha256 '3f9a79389bf72e47f4f484c4ffccfec2f4197ed5b235c7ba2ea028ba6ee0feed'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-go-test-bench/releases/download/v1.7.2/octocov-go-test-bench_v1.7.2_darwin_amd64.zip'
-      sha256 '790ba0719b1d6cb3daa0b4903bf767dfa306dd6bab38ab73ea80a6d1afa0e9c4'
+      url 'https://github.com/k1LoW/octocov-go-test-bench/releases/download/v1.7.3/octocov-go-test-bench_v1.7.3_darwin_amd64.zip'
+      sha256 'c5f9411881f4cf2c046b3b23863f89bd38b3a67c0eef25044dfa339ebd650c47'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/octocov-go-test-bench/releases/download/v1.7.2/octocov-go-test-bench_v1.7.2_linux_arm64.tar.gz'
-      sha256 '35348571b1854de963be973d549c769e5fb12b3985c985a108366e4a3b32ce46'
+      url 'https://github.com/k1LoW/octocov-go-test-bench/releases/download/v1.7.3/octocov-go-test-bench_v1.7.3_linux_arm64.tar.gz'
+      sha256 'dfff647eb4e7ed256a5fc4141fabe5f9356f10747eca896445b550cd4cabe857'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-go-test-bench/releases/download/v1.7.2/octocov-go-test-bench_v1.7.2_linux_amd64.tar.gz'
-      sha256 '21125183e9758c85450d0a1bc555d6924a6ac0d60c9307302983e1ffdd61d8d8'
+      url 'https://github.com/k1LoW/octocov-go-test-bench/releases/download/v1.7.3/octocov-go-test-bench_v1.7.3_linux_amd64.tar.gz'
+      sha256 '168f4337471558f74b9ba1f1403f9d35a6ede22196e34f83276fe693833c2578'
     end
   end
 
