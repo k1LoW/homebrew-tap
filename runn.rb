@@ -1,24 +1,24 @@
 class Runn < Formula
   desc 'runn is a tool for running operations following a scenario.'
   homepage 'https://github.com/k1LoW/runn'
-  version '1.1.2'
+  version '1.2.0'
   license 'MIT'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/runn/releases/download/v1.1.2/runn_v1.1.2_darwin_arm64.zip'
-      sha256 '2a0ba05daf481de9aa068358e9551b750d890a425f65a537324c831ffda30c21'
+      url 'https://github.com/k1LoW/runn/releases/download/v1.2.0/runn_v1.2.0_darwin_arm64.zip'
+      sha256 '0658ce4f33b1b205af7724775bc0299acac1e0a53185aeca21a789f373ee71b7'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/runn/releases/download/v1.1.2/runn_v1.1.2_darwin_amd64.zip'
-      sha256 '1152c6ad45eb004c3eab0f53bef9865283f38754272fa6af79ebb4bb3d5a4d12'
+      url 'https://github.com/k1LoW/runn/releases/download/v1.2.0/runn_v1.2.0_darwin_amd64.zip'
+      sha256 '6ad6ff2157b0f7ac8e53057a5d7a7a5e731d9bd846cf1b3fbd9852b36647ac96'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/runn/releases/download/v1.1.2/runn_v1.1.2_linux_amd64.tar.gz'
-      sha256 'edc42b1ae054fd66a40a671bea104135a3db6857f9fa8730acab9c98ece5cd7a'
+      url 'https://github.com/k1LoW/runn/releases/download/v1.2.0/runn_v1.2.0_linux_amd64.tar.gz'
+      sha256 'e12eb07115e00e0abfb84b2dc991628d79f060882411cbca83c1970962cb2c1f'
     end
   end
 
