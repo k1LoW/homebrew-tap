@@ -1,27 +1,27 @@
 class Tcmux < Formula
   desc 'tcmux is a terminal and Claude Code mux viewer.'
-  version '0.2.3'
+  version '0.3.0'
   homepage 'https://github.com/k1LoW/tcmux'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tcmux/releases/download/v0.2.3/tcmux_v0.2.3_darwin_arm64.zip'
-      sha256 'e0041ffe1a9a30d564112ea48109a11e256195a269bd911073fdfd6cae0af27f'
+      url 'https://github.com/k1LoW/tcmux/releases/download/v0.3.0/tcmux_v0.3.0_darwin_arm64.zip'
+      sha256 '991ee515c758511657151267a7ca008012e6529ceff4ff66b677b287a3fa7aeb'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tcmux/releases/download/v0.2.3/tcmux_v0.2.3_darwin_amd64.zip'
-      sha256 '41ec7cfac433739c0d74f4a214b2ff3c68196ac5ee6cf5bb3b96165797af3249'
+      url 'https://github.com/k1LoW/tcmux/releases/download/v0.3.0/tcmux_v0.3.0_darwin_amd64.zip'
+      sha256 '9dcd19fffed646e0ac06b1ba54076b5f7687da6c0d1a90a2a1d4a45b1adab955'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tcmux/releases/download/v0.2.3/tcmux_v0.2.3_linux_arm64.tar.gz'
-      sha256 '699427c5586851438a78e6c8cf28c5deb64c51039071b3491835e4d37aec3c32'
+      url 'https://github.com/k1LoW/tcmux/releases/download/v0.3.0/tcmux_v0.3.0_linux_arm64.tar.gz'
+      sha256 '8cd2948c29593c113a3582d44a56f8987b1b58f5e66de1118a30ec4ad5a421e4'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tcmux/releases/download/v0.2.3/tcmux_v0.2.3_linux_amd64.tar.gz'
-      sha256 'be316400ac55ec1ff7c3dc4609855e856bee6432411bb6f0be0a8d442fee6f34'
+      url 'https://github.com/k1LoW/tcmux/releases/download/v0.3.0/tcmux_v0.3.0_linux_amd64.tar.gz'
+      sha256 'fbe7ef0e5a7d42fa81d81ed004bba566e5ff4e90411cbad8a3cdd801243d2cb4'
     end
   end
 
