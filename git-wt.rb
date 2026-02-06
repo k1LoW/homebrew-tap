@@ -1,27 +1,27 @@
 class GitWt < Formula
   desc 'A Git subcommand that makes `git worktree` simple'
-  version '0.18.1'
+  version '0.19.0'
   homepage 'https://github.com/k1LoW/git-wt'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/git-wt/releases/download/v0.18.1/git-wt_v0.18.1_darwin_arm64.zip'
-      sha256 '418765117e6c58d21766eab03545e1637e6250c41f389ab5b9435297b2162657'
+      url 'https://github.com/k1LoW/git-wt/releases/download/v0.19.0/git-wt_v0.19.0_darwin_arm64.zip'
+      sha256 '28e5e3515777178661fb07afc3a7018b3c4c4629cc13cbd25bf82a3ceed19985'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/git-wt/releases/download/v0.18.1/git-wt_v0.18.1_darwin_amd64.zip'
-      sha256 '9d935795db1fe0d95301070839a6d4ab2031c7fc0f405e8a4f657ea77f40ea54'
+      url 'https://github.com/k1LoW/git-wt/releases/download/v0.19.0/git-wt_v0.19.0_darwin_amd64.zip'
+      sha256 '6d343742b522cc29bed3d580fcfdbbd626ff76224a69ecbc4429d3b1856a4a57'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/git-wt/releases/download/v0.18.1/git-wt_v0.18.1_linux_arm64.tar.gz'
-      sha256 '8bb0645ef8a1f8872f05cdee0d1d2cb2d5c82be0dc95ae191d55b7636bb88017'
+      url 'https://github.com/k1LoW/git-wt/releases/download/v0.19.0/git-wt_v0.19.0_linux_arm64.tar.gz'
+      sha256 'faddf98b68c8e12f9c98683ec1f784a802f7e9a1d66d5014055270ad00dc67c0'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/git-wt/releases/download/v0.18.1/git-wt_v0.18.1_linux_amd64.tar.gz'
-      sha256 '62c740bfa6c8b22f9d2463ab764ac880493d9061e7cc5383cbc1b6297c4efc7a'
+      url 'https://github.com/k1LoW/git-wt/releases/download/v0.19.0/git-wt_v0.19.0_linux_amd64.tar.gz'
+      sha256 'e43b87784823cdf60883374900d1c8f5814c8c117431293bdf7807dccd8be98f'
     end
   end
 
