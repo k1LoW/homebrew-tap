@@ -1,27 +1,27 @@
 class OctocovCachegrind < Formula
   desc 'Generate octocov custom metrics JSON from the output of `valgrind --tool=cachegrind`.'
-  version '0.2.3'
+  version '0.2.4'
   homepage 'https://github.com/k1LoW/octocov-cachegrind'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.3/octocov-cachegrind_v0.2.3_darwin_arm64.zip'
-      sha256 'f12b40efcc6518c74b4c40ae3d202153870c5e692dbbe990955a22fef9dea182'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.4/octocov-cachegrind_v0.2.4_darwin_arm64.zip'
+      sha256 '00abbeda6edc4ce98d6b2f316230ed90f6a16604a2e7142a3ef7a63cb584cb36'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.3/octocov-cachegrind_v0.2.3_darwin_amd64.zip'
-      sha256 '91dd649f904ce31fae60dac31301a03a49c324da404a3a65c85a74d0847495bf'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.4/octocov-cachegrind_v0.2.4_darwin_amd64.zip'
+      sha256 '88b7945886c1ac9bc766f8a32f87164aa55b94dcb64eaa6dc9a050d12f002734'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.3/octocov-cachegrind_v0.2.3_linux_arm64.tar.gz'
-      sha256 '9a09561d13684797f484b799fd042942e8b0cde8f2c8f51cda57efd221b4802e'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.4/octocov-cachegrind_v0.2.4_linux_arm64.tar.gz'
+      sha256 '7ac8427185df50d176b20884e754efaa39a2712ab4f559ee63a08f3897e334c5'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.3/octocov-cachegrind_v0.2.3_linux_amd64.tar.gz'
-      sha256 '0bde1e88be8d71840c3a0c1e37c2680072b8ee49840008b7f0c7315f19785380'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.4/octocov-cachegrind_v0.2.4_linux_amd64.tar.gz'
+      sha256 '861a5d02b8691e7f3c7d00c9211eca0dd6ef4b0164ce948ece5e79b7379887fd'
     end
   end
 
