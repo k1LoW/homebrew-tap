@@ -35,5 +35,6 @@ class Mo < Formula
       system 'make', 'build'
     end
     bin.install 'mo'
+    generate_completions_from_executable(bin/'mo', 'completion')
   end
 end
