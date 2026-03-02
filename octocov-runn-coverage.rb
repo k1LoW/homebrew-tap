@@ -1,27 +1,27 @@
 class OctocovRunnCoverage < Formula
   desc 'Generate octocov custom metrics JSON from the output of 'runn coverage'.'
-  version '0.1.5'
+  version '0.1.6'
   homepage 'https://github.com/k1LoW/octocov-runn-coverage'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/octocov-runn-coverage/releases/download/v0.1.5/octocov-runn-coverage_v0.1.5_darwin_arm64.zip'
-      sha256 'a5dd7d2b0d2751e8e903e8cdca1ca140ec89c8fc0c3f852db4d77c1cb85d68ff'
+      url 'https://github.com/k1LoW/octocov-runn-coverage/releases/download/v0.1.6/octocov-runn-coverage_v0.1.6_darwin_arm64.zip'
+      sha256 '151709a7e1028d8f0b0119ab2233f3606e75701db012b8ab835c1a3a077942e5'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-runn-coverage/releases/download/v0.1.5/octocov-runn-coverage_v0.1.5_darwin_amd64.zip'
-      sha256 '048aa495b7daf9eb8efac434005b0828e424cc41951767e7b3cee22830d36133'
+      url 'https://github.com/k1LoW/octocov-runn-coverage/releases/download/v0.1.6/octocov-runn-coverage_v0.1.6_darwin_amd64.zip'
+      sha256 '94fa84eb7ca876f98a778806bc85933a416e0a195861190829b68f2e06d82090'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/octocov-runn-coverage/releases/download/v0.1.5/octocov-runn-coverage_v0.1.5_linux_arm64.tar.gz'
-      sha256 '19deab7d72b8e84e5223a30121a0b442da321bc71872092a4819de935372b0a2'
+      url 'https://github.com/k1LoW/octocov-runn-coverage/releases/download/v0.1.6/octocov-runn-coverage_v0.1.6_linux_arm64.tar.gz'
+      sha256 '47addaf19f3e87746a6e850a8c58585d844517a1fccbb26404f69fc8ee257a2e'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-runn-coverage/releases/download/v0.1.5/octocov-runn-coverage_v0.1.5_linux_amd64.tar.gz'
-      sha256 '8f54133bd46cd50f8c2de1192e53befae7fd9164da383c1b043eec35cabcbdff'
+      url 'https://github.com/k1LoW/octocov-runn-coverage/releases/download/v0.1.6/octocov-runn-coverage_v0.1.6_linux_amd64.tar.gz'
+      sha256 '1576fa4ca3c5755c346f767642ffe4f5a81ef1930c9deb1001d27bce2c2bda63'
     end
   end
 
