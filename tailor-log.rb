@@ -1,27 +1,27 @@
 class TailorLog < Formula
   desc 'tailor-log is a tool for handling logs from a workspace on the Tailor Platform.'
-  version '0.6.0'
+  version '0.6.1'
   homepage 'https://github.com/k1LoW/tailor-log'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tailor-log/releases/download/v0.6.0/tailor-log_v0.6.0_darwin_arm64.zip'
-      sha256 '07d1500ff5d7c7f24c94c4f5be6a2451a89c9112b3f366ba52ac9d2c3f59e3b0'
+      url 'https://github.com/k1LoW/tailor-log/releases/download/v0.6.1/tailor-log_v0.6.1_darwin_arm64.zip'
+      sha256 '83e916e0ffc1038b2318559dcab6dfb8548425924f0b054d1cbedbebf3946a62'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tailor-log/releases/download/v0.6.0/tailor-log_v0.6.0_darwin_amd64.zip'
-      sha256 '720039af6b54014a77be7bba0369ec85357020737518db82b148f0f0c5f81e86'
+      url 'https://github.com/k1LoW/tailor-log/releases/download/v0.6.1/tailor-log_v0.6.1_darwin_amd64.zip'
+      sha256 '4fdf01ffcad89a934d34541f7721e58ef2a1df46e46a47669e4861c0cd3e7e40'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tailor-log/releases/download/v0.6.0/tailor-log_v0.6.0_linux_arm64.tar.gz'
-      sha256 'ff20dd96c29ccb5f4d0dcfd35702ffd342e97350c26fe9dca275df2af3ac7912'
+      url 'https://github.com/k1LoW/tailor-log/releases/download/v0.6.1/tailor-log_v0.6.1_linux_arm64.tar.gz'
+      sha256 '3761994a0febf874c4a26f3485367b0f7be38fad73609e8355059b7e84e60600'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tailor-log/releases/download/v0.6.0/tailor-log_v0.6.0_linux_amd64.tar.gz'
-      sha256 'b22f05ca77f9e814a1527043851e372bbea4080cac6f4acb82a0f002415a01f1'
+      url 'https://github.com/k1LoW/tailor-log/releases/download/v0.6.1/tailor-log_v0.6.1_linux_amd64.tar.gz'
+      sha256 '2a4a48e2636932f0b419b8a977dc36f482355d6442d82aa131b29718d27e44bc'
     end
   end
 
