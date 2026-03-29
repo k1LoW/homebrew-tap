@@ -1,0 +1,26 @@
+name: Install formulae
+on:
+  push:
+
+jobs:
+  darwin:
+    runs-on: macos-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Install formulae
+        run: |
+          mkdir -p `brew --repo`/Library/Taps/k1low/tap
+          cp -r ./ `brew --repo`/Library/Taps/k1low/tap
+          ls -la `brew --repo`/Library/Taps/k1low/tap
+          make install-all
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Install formulae
+        run: |
+          make install-all-linux
