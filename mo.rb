@@ -1,27 +1,27 @@
 class Mo < Formula
   desc 'mo is a Markdown viewer that opens .md files in a browser.'
-  version '0.23.4'
+  version '1.0.0'
   homepage 'https://github.com/k1LoW/mo'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/mo/releases/download/v0.23.4/mo_v0.23.4_darwin_arm64.zip'
-      sha256 'f7fc9fb72d956203c20f6c8714708e478e95a7e02cb9c64bd280098ad9583626'
+      url 'https://github.com/k1LoW/mo/releases/download/v1.0.0/mo_v1.0.0_darwin_arm64.zip'
+      sha256 'c1da0edaaf7ab1b59dca51237da0a796c6fc6d8a092ea6ac6ae91e8f59be731d'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/mo/releases/download/v0.23.4/mo_v0.23.4_darwin_amd64.zip'
-      sha256 '87ea56bb00fa51f97891f332391525ad2a01585e124d16a0438fb866e17d386e'
+      url 'https://github.com/k1LoW/mo/releases/download/v1.0.0/mo_v1.0.0_darwin_amd64.zip'
+      sha256 'f65315d3cdd09c8e68642f068b810a233fe90c84a79da4ca4054d26b271509ed'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/mo/releases/download/v0.23.4/mo_v0.23.4_linux_arm64.tar.gz'
-      sha256 '01b31d679b154e37adb702176659dcbe3753f54be6a30eef2712de00328388c4'
+      url 'https://github.com/k1LoW/mo/releases/download/v1.0.0/mo_v1.0.0_linux_arm64.tar.gz'
+      sha256 '7b35fe337b8cf93fb59e9f53ca503b0117d6a9edee289ba6b8d7659058b72b33'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/mo/releases/download/v0.23.4/mo_v0.23.4_linux_amd64.tar.gz'
-      sha256 'a92674fdce8785cbe5dd6c88aeef43e3e818612cba512bd77027573c7862e4ae'
+      url 'https://github.com/k1LoW/mo/releases/download/v1.0.0/mo_v1.0.0_linux_amd64.tar.gz'
+      sha256 'e15d5a30b3be089ecab85a962ec31bd25f9064a4041d3739e752852cc915ddc8'
     end
   end
 
