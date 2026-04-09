@@ -1,27 +1,27 @@
 class TblsBuild < Formula
   desc 'tbls-build is an external subcommand of tbls for customizing config file of tbls using other tbls.yml or schema.json.'
-  version '0.8.3'
+  version '0.8.4'
   homepage 'https://github.com/k1LoW/tbls-build'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tbls-build/releases/download/v0.8.3/tbls-build_v0.8.3_darwin_arm64.zip'
-      sha256 '0f544f5d3c8b9fa094f59e85666de9d247ffc242cc024860fd18ed8335d15050'
+      url 'https://github.com/k1LoW/tbls-build/releases/download/v0.8.4/tbls-build_v0.8.4_darwin_arm64.zip'
+      sha256 'b6e28db01b9a01a8ff585c48fe15570b30b480885ebe87140b4cef0ab297a44b'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls-build/releases/download/v0.8.3/tbls-build_v0.8.3_darwin_amd64.zip'
-      sha256 '9028d90166a6a9e299ec1d2c8220126bed53bbcdec45e4e9ce5ea0931cca0b58'
+      url 'https://github.com/k1LoW/tbls-build/releases/download/v0.8.4/tbls-build_v0.8.4_darwin_amd64.zip'
+      sha256 'fb57293c557c324bb3be5027459e137e98a9044e950a2cb7520e700bc5b6c1e9'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tbls-build/releases/download/v0.8.3/tbls-build_v0.8.3_linux_arm64.tar.gz'
-      sha256 'b9baea9bde54a594f218b80ab114a9d717c2d5676bdc5c7faef85907dfcf9626'
+      url 'https://github.com/k1LoW/tbls-build/releases/download/v0.8.4/tbls-build_v0.8.4_linux_arm64.tar.gz'
+      sha256 '6ead3617de5d24b0251ddc55ee473817273e890bc7bbc1a83cca087f7abfd13b'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls-build/releases/download/v0.8.3/tbls-build_v0.8.3_linux_amd64.tar.gz'
-      sha256 '28c19fba7f36e4b3fc78842b3a25bcd08443363920b75eec510d1900b15f2aef'
+      url 'https://github.com/k1LoW/tbls-build/releases/download/v0.8.4/tbls-build_v0.8.4_linux_amd64.tar.gz'
+      sha256 '08ce2bbdeccf90cb953ba1bc2369b76ebc2aebae4a183628e18f316533b39d64'
     end
   end
 
