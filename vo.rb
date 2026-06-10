@@ -21,6 +21,13 @@ class Vo < Formula
 
       def install
         bin.install "vo"
+        # The downloaded tarball inherits `com.apple.quarantine` from the macOS
+        # network stack (LaunchServices marks archive downloads regardless of
+        # the HTTP client used), and `tar -x` carries the attribute over to the
+        # extracted binary. Gatekeeper would then refuse to launch the
+        # ad-hoc-signed binary on first run. Strip the attribute explicitly so
+        # the installed binary works without `xattr -cr` from the user.
+        system "/usr/bin/xattr", "-cr", bin/"vo"
       end
     end
   end
