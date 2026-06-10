@@ -4,7 +4,7 @@
 class Vo < Formula
   desc "On-device live transcription and translation CLI for macOS 26+"
   homepage "https://github.com/k1LoW/vo"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   livecheck do
@@ -17,7 +17,7 @@ class Vo < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/k1LoW/vo/releases/download/v#{version}/vo_v#{version}_darwin_arm64.tar.gz"
-      sha256 "99fc4d0a70cc6ef2c0a08f3372f339f1969af7b3a5ed86b18d85f36e6801d8c7"
+      sha256 "6e8e4b017f4b4b2598e5f8c351f18c0b29aa1c3958a54c24da74a1336ac27cd6"
 
       def install
         bin.install "vo"
