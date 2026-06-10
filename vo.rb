@@ -17,7 +17,7 @@ class Vo < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/k1LoW/vo/releases/download/v#{version}/vo_v#{version}_darwin_arm64.tar.gz"
-      sha256 "6e8e4b017f4b4b2598e5f8c351f18c0b29aa1c3958a54c24da74a1336ac27cd6"
+      sha256 "15bb280ef25db9237d3922af9adf2ecd9c8bb120dae07b53f0c7748d569a6c60"
 
       def install
         bin.install "vo"
