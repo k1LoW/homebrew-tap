@@ -9,22 +9,19 @@ class BrewfileDesc < Formula
   license "MIT"
   depends_on :macos
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/brewfile-desc/releases/download/v0.1.1/brewfile-desc_v0.1.1_darwin_arm64.zip"
-      sha256 "5bd52af1d234a657bf00547c7c50291b072394e36e09ea9f58ffa507c8acaf75"
+  # brewfile-desc ships macOS-only release artifacts, so the URL is selected by
+  # CPU (which is evaluated on any OS) instead of inside `on_macos`. Wrapping it
+  # in `on_macos` would leave no URL defined when the formula is loaded on Linux,
+  # and recent Homebrew rejects that with "formula requires at least a URL".
+  if Hardware::CPU.arm?
+    url "https://github.com/k1LoW/brewfile-desc/releases/download/v0.1.1/brewfile-desc_v0.1.1_darwin_arm64.zip"
+    sha256 "5bd52af1d234a657bf00547c7c50291b072394e36e09ea9f58ffa507c8acaf75"
+  else
+    url "https://github.com/k1LoW/brewfile-desc/releases/download/v0.1.1/brewfile-desc_v0.1.1_darwin_amd64.zip"
+    sha256 "1c4261b408601459a9b26f3d0f103b25bfb83d370df37ae9badea0fdb7a83c0f"
+  end
 
-      def install
-        bin.install 'brewfile-desc'
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/brewfile-desc/releases/download/v0.1.1/brewfile-desc_v0.1.1_darwin_amd64.zip"
-      sha256 "1c4261b408601459a9b26f3d0f103b25bfb83d370df37ae9badea0fdb7a83c0f"
-
-      def install
-        bin.install 'brewfile-desc'
-      end
-    end
+  def install
+    bin.install "brewfile-desc"
   end
 end

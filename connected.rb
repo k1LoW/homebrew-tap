@@ -4,10 +4,26 @@ class Connected < Formula
   homepage "https://github.com/k1LoW/connected"
   version "0.4.1"
 
-  if OS.mac?
-    url "https://github.com/k1LoW/connected/releases/download/v0.4.1/connected_v0.4.1_darwin_amd64.zip"
-    sha256 "438fb17761934ea85c5de5dbbd12bf1ff0b771820ff274d7a9efeed8b54bebe6"
-  elsif OS.linux?
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/k1LoW/connected/releases/download/v0.4.1/connected_v0.4.1_darwin_arm64.zip"
+      sha256 "6fea64346c2bc2a6c5ba2a80f5e69478c137e6b9ce3c06045f85161743e43380"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/connected/releases/download/v0.4.1/connected_v0.4.1_darwin_amd64.zip"
+      sha256 "438fb17761934ea85c5de5dbbd12bf1ff0b771820ff274d7a9efeed8b54bebe6"
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/k1LoW/connected/releases/download/v0.4.1/connected_v0.4.1_linux_arm64.tar.gz"
+      sha256 "b9f86610d224454305ada218ad2cda6f80c271d106f052493a5139544e7e207c"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/connected/releases/download/v0.4.1/connected_v0.4.1_linux_amd64.tar.gz"
+      sha256 "e6f1aa50c0ce95dc9bf650c3813687001f29610a3fd006cc73c0c84e5808c286"
+    end
   end
 
   def install
