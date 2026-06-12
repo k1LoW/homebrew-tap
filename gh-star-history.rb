@@ -28,6 +28,14 @@ class GhStarHistory < Formula
   end
 
   on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/k1LoW/gh-star-history/releases/download/v0.2.6/gh-star-history_v0.2.6_linux_arm64.tar.gz"
+      sha256 "caf02006d49203417264a739ff3f96d40b14899efc24a93e4a01e659ab4ecfff"
+
+      def install
+        bin.install "gh-star-history"
+      end
+    end
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/gh-star-history/releases/download/v0.2.6/gh-star-history_v0.2.6_linux_amd64.tar.gz"
       sha256 "c5caf9e930e0a4c99dc89a353e564d1e44338c430bdb1549fa7ec7a5e81f8a90"

@@ -28,6 +28,14 @@ class Repin < Formula
   end
 
   on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/k1LoW/repin/releases/download/v0.4.1/repin_v0.4.1_linux_arm64.tar.gz"
+      sha256 "11e7a119b8319d0033d1f20384812962b020a04a1ced6c2fcf54fa0442154ed3"
+
+      def install
+        bin.install 'repin'
+      end
+    end
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/repin/releases/download/v0.4.1/repin_v0.4.1_linux_amd64.tar.gz"
       sha256 "836cbd9cc574b71a7fe1c3cec8963333e9c22b6dd80c8b3654bcb3d19edbe2d4"
