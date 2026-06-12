@@ -7,7 +7,6 @@ class Ghput < Formula
   homepage "https://github.com/k1LoW/ghput"
   version "0.14.6"
   license "MIT"
-  depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
@@ -25,6 +24,33 @@ class Ghput < Formula
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/ghput/releases/download/v0.14.6/ghput_v0.14.6_darwin_amd64.zip"
       sha256 "7469c96acd0a2defe7437a6fd72a29c8738435acec9e79fe5e7555289e4690d8"
+
+      def install
+        system './ghput', 'completion', 'bash', '--out', 'ghput.bash'
+        system './ghput', 'completion', 'zsh', '--out', 'ghput.zsh'
+        bin.install 'ghput'
+        bash_completion.install 'ghput.bash' => 'ghput'
+        zsh_completion.install 'ghput.zsh' => '_ghput'
+      end
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/k1LoW/ghput/releases/download/v0.14.6/ghput_v0.14.6_linux_arm64.tar.gz"
+      sha256 "481d4c098389639b7cb5e12e923d29514c48cef704295e9939189aae0bbf1c31"
+
+      def install
+        system './ghput', 'completion', 'bash', '--out', 'ghput.bash'
+        system './ghput', 'completion', 'zsh', '--out', 'ghput.zsh'
+        bin.install 'ghput'
+        bash_completion.install 'ghput.bash' => 'ghput'
+        zsh_completion.install 'ghput.zsh' => '_ghput'
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/k1LoW/ghput/releases/download/v0.14.6/ghput_v0.14.6_linux_amd64.tar.gz"
+      sha256 "d9f6356a597448ed7d2657303682234e05e02b959cc273549c1084dfd32da158"
 
       def install
         system './ghput', 'completion', 'bash', '--out', 'ghput.bash'

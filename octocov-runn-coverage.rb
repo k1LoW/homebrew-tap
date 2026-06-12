@@ -1,5 +1,5 @@
 class OctocovRunnCoverage < Formula
-  desc 'Generate octocov custom metrics JSON from the output of 'runn coverage'.'
+  desc "Generate octocov custom metrics JSON from the output of 'runn coverage'."
   version '0.1.11'
   homepage 'https://github.com/k1LoW/octocov-runn-coverage'
 

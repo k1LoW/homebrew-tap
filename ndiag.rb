@@ -36,6 +36,18 @@ class Ndiag < Formula
   end
 
   on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.2/ndiag_v0.15.2_linux_arm64.tar.gz"
+      sha256 "23e4e4344862acdcf6e0d54a5df26e9148429a73482ffe0af2fcc39d171d4526"
+
+      def install
+        system './ndiag', 'completion', 'bash', '--out', 'ndiag.bash'
+        system './ndiag', 'completion', 'zsh', '--out', 'ndiag.zsh'
+        bin.install 'ndiag'
+        bash_completion.install 'ndiag.bash' => 'ndiag'
+        zsh_completion.install 'ndiag.zsh' => '_ndiag'
+      end
+    end
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/ndiag/releases/download/v0.15.2/ndiag_v0.15.2_linux_amd64.tar.gz"
       sha256 "636bddd278987d567fe1baf794eaf6f5e05a18fcdbc8782638bb99cd81ea4700"

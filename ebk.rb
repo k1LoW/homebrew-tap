@@ -28,6 +28,14 @@ class Ebk < Formula
   end
 
   on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/k1LoW/ebk/releases/download/v0.2.5/ebk_v0.2.5_linux_arm64.tar.gz"
+      sha256 "1527c688b33d446093ef47bb729d946e89aaa8baf462c68f85c0a721cd7e17cf"
+
+      def install
+        bin.install "ebk"
+      end
+    end
     if Hardware::CPU.intel?
       url "https://github.com/k1LoW/ebk/releases/download/v0.2.5/ebk_v0.2.5_linux_amd64.tar.gz"
       sha256 "2405f67cc09bad42d759d4c6aea860169adbd516736fc43d256219c93243e121"
