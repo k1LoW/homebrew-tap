@@ -18,8 +18,16 @@ class Vo < Formula
     strategy :github_latest
   end
 
+  # A versioned `depends_on macos:` only sets the macOS version floor; on Linux
+  # it is treated as satisfied, so the bare `:macos` is what actually keeps this
+  # macOS-only formula from installing on Linux. The version floor itself lives
+  # in `on_macos` because pairing it with the bare `:macos` at the top level is
+  # deprecated.
+  depends_on :macos
   depends_on arch: :arm64
-  depends_on macos: :tahoe
+  on_macos do
+    depends_on macos: :tahoe
+  end
 
   def install
     bin.install "vo"
