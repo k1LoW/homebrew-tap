@@ -1,23 +1,23 @@
 class TrivyDbTo < Formula
   desc 'trivy-db-to is a tool for migrating/converting vulnerability information from Trivy DB to other datasource.'
-  version '2.2.8'
+  version '2.2.9'
   homepage 'https://github.com/k1LoW/trivy-db-to'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/trivy-db-to/releases/download/v2.2.8/trivy-db-to_v2.2.8_darwin_arm64.zip'
-      sha256 '5ce0485283ee075e34ec71e6faa543e14809a3aa1dc6df4b68ef84cb443d01d4'
+      url 'https://github.com/k1LoW/trivy-db-to/releases/download/v2.2.9/trivy-db-to_v2.2.9_darwin_arm64.zip'
+      sha256 '7d603fa2d9105531da8a7ac57d6533a4c43ed8e149c67de50835ceecedd5eb4e'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/trivy-db-to/releases/download/v2.2.8/trivy-db-to_v2.2.8_darwin_amd64.zip'
-      sha256 '6e0ed4188667a13c960019137b9c61a527c37e1c0c67ba4bf3654f4b005b031c'
+      url 'https://github.com/k1LoW/trivy-db-to/releases/download/v2.2.9/trivy-db-to_v2.2.9_darwin_amd64.zip'
+      sha256 '2fe8d647a8a626dcc8db49a69f7240424f123f4b37ae916ed38a9eebaa173651'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/trivy-db-to/releases/download/v2.2.8/trivy-db-to_v2.2.8_linux_amd64.tar.gz'
-      sha256 'e1d57f9f96fbd6a736b9cb2668409c30f4a0e8e19b1b6353d4511be7ffa06fbf'
+      url 'https://github.com/k1LoW/trivy-db-to/releases/download/v2.2.9/trivy-db-to_v2.2.9_linux_amd64.tar.gz'
+      sha256 '35f0f65ae034404cfcdcc5a60d110c910d09556715dd2b427b92fef2eea89e84'
     end
   end
 
