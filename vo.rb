@@ -4,14 +4,14 @@
 class Vo < Formula
   desc "On-device live transcription and translation CLI for macOS 26+"
   homepage "https://github.com/k1LoW/vo"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
   # vo only ships an arm64 macOS artifact. The URL is defined at the top level
   # (rather than inside `on_macos`) so the formula still resolves a URL when it
   # is loaded on Linux; recent Homebrew rejects a URL-less formula with "formula
   # requires at least a URL". Installation is restricted by the `depends_on`s.
   url "https://github.com/k1LoW/vo/releases/download/v#{version}/vo_v#{version}_darwin_arm64.tar.gz"
-  sha256 "f762e39d5e582ffa12283958a7cb779ad98ca2f97ec13ac4ffa11181b779c26d"
+  sha256 "ef7ac653f7156a2ec1b1daef822130dc5d0bf465c08c5757de867e079f44b05f"
 
   livecheck do
     url :url
