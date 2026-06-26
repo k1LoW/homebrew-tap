@@ -1,27 +1,27 @@
 class Concrun < Formula
   desc 'Run commands concurrently'
-  version '0.3.0'
+  version '0.3.1'
   homepage 'https://github.com/k1LoW/concrun'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/concrun/releases/download/v0.3.0/concrun_v0.3.0_darwin_arm64.zip'
-      sha256 '6de366eb370dc58dd5eb2a7f871e1b13be6a1b6983ddc9896556f72411b3fe48'
+      url 'https://github.com/k1LoW/concrun/releases/download/v0.3.1/concrun_v0.3.1_darwin_arm64.zip'
+      sha256 '9244d21b66d3a29850de6b1f10d75ee83be47d3374c1072a3ce0062d25915223'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/concrun/releases/download/v0.3.0/concrun_v0.3.0_darwin_amd64.zip'
-      sha256 '8f9a94cc62ec0d291bdbcc2f6e4e913ae0facb101ac4e7981df159dde461e48b'
+      url 'https://github.com/k1LoW/concrun/releases/download/v0.3.1/concrun_v0.3.1_darwin_amd64.zip'
+      sha256 '281da38f64af9dd317f3c50ace656382efa5638ef888fb5f382ec2736eed32f6'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/concrun/releases/download/v0.3.0/concrun_v0.3.0_linux_arm64.tar.gz'
-      sha256 '4b796bb3309d2e79bcc0c0f59dfa6c8c71cfacc2096b3286c8ffcf23ef1c87d3'
+      url 'https://github.com/k1LoW/concrun/releases/download/v0.3.1/concrun_v0.3.1_linux_arm64.tar.gz'
+      sha256 'b4832463f6177096883a47ae6c01592944a6088e78d1247adf2fb4aae1a8f1ce'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/concrun/releases/download/v0.3.0/concrun_v0.3.0_linux_amd64.tar.gz'
-      sha256 'de40e2e39a0ae965d05f95a9f22829de15cd825c63e3bb632f294e18148de2eb'
+      url 'https://github.com/k1LoW/concrun/releases/download/v0.3.1/concrun_v0.3.1_linux_amd64.tar.gz'
+      sha256 '4fefb98aa10879bb5a2a6888aeb351d9c2f0bc6499c0fab4a0a0fe4441c1a4f9'
     end
   end
 
