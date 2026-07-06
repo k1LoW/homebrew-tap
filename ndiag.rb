@@ -5,13 +5,13 @@
 class Ndiag < Formula
   desc "ndiag is a high-level architecture diagramming/documentation tool."
   homepage "https://github.com/k1LoW/ndiag"
-  version "0.15.3"
+  version "0.15.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.3/ndiag_v0.15.3_darwin_arm64.zip"
-      sha256 "db83a6ea1695d7e63ddbf10673bc0b23bbb1ebbb65da74b5524c3dfe3ac94c28"
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.4/ndiag_v0.15.4_darwin_arm64.zip"
+      sha256 "ed33828d8b3e40396f8b150fa1f946a31445345d0ac7d892f546db686c1b921d"
 
       def install
         system './ndiag', 'completion', 'bash', '--out', 'ndiag.bash'
@@ -22,8 +22,8 @@ class Ndiag < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.3/ndiag_v0.15.3_darwin_amd64.zip"
-      sha256 "22545dcdaae87ad44c26f8df408de8ec4a4d35fed944faa24c734d0db125bf7f"
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.4/ndiag_v0.15.4_darwin_amd64.zip"
+      sha256 "7635d8d4b0dcc3b00ccc48bf4b89ce1631a2ecb958dc51a0d394dbeeb764812a"
 
       def install
         system './ndiag', 'completion', 'bash', '--out', 'ndiag.bash'
@@ -37,8 +37,8 @@ class Ndiag < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.3/ndiag_v0.15.3_linux_arm64.tar.gz"
-      sha256 "565217e39d9e7e1e68c0b73df5676ed599967130a607484db9f9953aa9080062"
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.4/ndiag_v0.15.4_linux_arm64.tar.gz"
+      sha256 "71b115503e218ab2c21cb637478d8ff7f12a0a26a9505555242f4d5b962c6f57"
 
       def install
         system './ndiag', 'completion', 'bash', '--out', 'ndiag.bash'
@@ -49,8 +49,8 @@ class Ndiag < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.3/ndiag_v0.15.3_linux_amd64.tar.gz"
-      sha256 "31d5b55719082df232506e03f4f15926dd717bf5c5fa9837b8a013fec5d3ca26"
+      url "https://github.com/k1LoW/ndiag/releases/download/v0.15.4/ndiag_v0.15.4_linux_amd64.tar.gz"
+      sha256 "7b4a7b10546fe4d870edab6efd9e599ee6f102e612d73e1d1d64bb4fb3e30ad1"
 
       def install
         system './ndiag', 'completion', 'bash', '--out', 'ndiag.bash'
