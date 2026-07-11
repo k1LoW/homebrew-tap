@@ -1,27 +1,27 @@
 class TblsMeta < Formula
   desc 'tbls-meta is an external subcommand of tbls for applying metadata managed by tbls to the datasource.'
-  version '0.4.9'
+  version '0.4.10'
   homepage 'https://github.com/k1LoW/tbls-meta'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tbls-meta/releases/download/v0.4.9/tbls-meta_v0.4.9_darwin_arm64.zip'
-      sha256 'fa5127f91c6edfcdbb71051eb8f1eb5f9ae0b75e7470b4fd972485d19b269b43'
+      url 'https://github.com/k1LoW/tbls-meta/releases/download/v0.4.10/tbls-meta_v0.4.10_darwin_arm64.zip'
+      sha256 '61d3019341e4f4ebc1fbf5f9689008e86e5e4c3d2f05787bdb0bd9652905497a'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls-meta/releases/download/v0.4.9/tbls-meta_v0.4.9_darwin_amd64.zip'
-      sha256 '61629c85d8e105d71bd616afb18e1c1139dfad2e74bf1d6fb1055b829a3f20a4'
+      url 'https://github.com/k1LoW/tbls-meta/releases/download/v0.4.10/tbls-meta_v0.4.10_darwin_amd64.zip'
+      sha256 '5c6020765b695c9ca5d2338610563215ccf183c701314ccef588f76deec3577e'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tbls-meta/releases/download/v0.4.9/tbls-meta_v0.4.9_linux_arm64.tar.gz'
-      sha256 '45cc2f44d8a23c3ddad368ef9dcd24f8e5ffbe927910b0d09c8eb84def0fd7e7'
+      url 'https://github.com/k1LoW/tbls-meta/releases/download/v0.4.10/tbls-meta_v0.4.10_linux_arm64.tar.gz'
+      sha256 '72085c21ba1a216c267eff7583a29dfe7b7029057c0c1bd1b120efb6e1909cc8'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tbls-meta/releases/download/v0.4.9/tbls-meta_v0.4.9_linux_amd64.tar.gz'
-      sha256 '19543856d28d330c8e3a1f5ae04b2207e8f905ac5ab245ed6d99e181270c3429'
+      url 'https://github.com/k1LoW/tbls-meta/releases/download/v0.4.10/tbls-meta_v0.4.10_linux_amd64.tar.gz'
+      sha256 'f9424ba1f7bb233b052ce8a2f371a504716f44a2ca534e852f0fa98bb3f8af15'
     end
   end
 

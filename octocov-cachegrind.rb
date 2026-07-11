@@ -1,27 +1,27 @@
 class OctocovCachegrind < Formula
   desc 'Generate octocov custom metrics JSON from the output of `valgrind --tool=cachegrind`.'
-  version '0.2.7'
+  version '0.2.8'
   homepage 'https://github.com/k1LoW/octocov-cachegrind'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.7/octocov-cachegrind_v0.2.7_darwin_arm64.zip'
-      sha256 'bd2f954c4aae6f6a7c7bfe8f7a8e50829524ee21bd9c8a2c065a5eaf8bb0bc10'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.8/octocov-cachegrind_v0.2.8_darwin_arm64.zip'
+      sha256 'ca4b5235b511091c42664d560f7fdf49b7336f0894138570e8e3303b946b0ded'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.7/octocov-cachegrind_v0.2.7_darwin_amd64.zip'
-      sha256 '025831079404dcd83403e741434b925035798e90512452314c54f322272f1062'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.8/octocov-cachegrind_v0.2.8_darwin_amd64.zip'
+      sha256 '793e8bc0d0c7a00a028a78196dcfad5bf076558a4cc9ec74d505596ae94afc8a'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.7/octocov-cachegrind_v0.2.7_linux_arm64.tar.gz'
-      sha256 'e7068dd9a08590c82f1ee78a6fff2712f508bd8f8c7245337131a59d363e2928'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.8/octocov-cachegrind_v0.2.8_linux_arm64.tar.gz'
+      sha256 '53ece6f0fdc31a2478d30aa9a4a16479c1f83ea62cc26924e8434aafce6d49d4'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.7/octocov-cachegrind_v0.2.7_linux_amd64.tar.gz'
-      sha256 '559f3c8480c63f7fec74146fb18585022adeb573f9b65df78fdfe60c00992243'
+      url 'https://github.com/k1LoW/octocov-cachegrind/releases/download/v0.2.8/octocov-cachegrind_v0.2.8_linux_amd64.tar.gz'
+      sha256 '5c12ec5d3fcd5dd14c41d97ccbbe2d3ef0f95b85069a0740383c371ed99bcf3b'
     end
   end
 
