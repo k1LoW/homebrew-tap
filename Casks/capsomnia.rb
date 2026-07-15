@@ -1,6 +1,6 @@
 cask "capsomnia" do
-  version "1.0.0"
-  sha256 "a8bfd0803df9a1be7120bcada99777c0f12389c7f515add3b44b4e0ce4d37ac4"
+  version "1.0.1"
+  sha256 "35fb4af350c54255479047efc7c0abf7f96f0538ce6fba82bc09285acefc3565"
 
   url "https://github.com/fuji-mak/Capsomnia/releases/download/v#{version}/Capsomnia-#{version}.pkg"
   name "Capsomnia"
