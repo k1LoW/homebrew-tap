@@ -1,24 +1,24 @@
 class GhSetup < Formula
   desc ':octocat: Setup asset of Github releases.'
-  version '1.11.8'
+  version '1.11.9'
   homepage 'https://github.com/k1LoW/gh-setup'
   license 'MIT'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/gh-setup/releases/download/v1.11.8/gh-setup_v1.11.8_darwin_arm64.zip'
-      sha256 '3e8b9c69467397707c3dc01c68f7f221f087860619b97c3b44f6c1047a2d65c6'
+      url 'https://github.com/k1LoW/gh-setup/releases/download/v1.11.9/gh-setup_v1.11.9_darwin_arm64.zip'
+      sha256 'fe7ed1f5a11c1650435f313cf98d7f1b0da7faae8e88c02fe714c432ae528565'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/gh-setup/releases/download/v1.11.8/gh-setup_v1.11.8_darwin_amd64.zip'
-      sha256 'e0bfd77dfd148c66e03916c46891bb7157b1f2846c5b2c7b5638e6dd6a551242'
+      url 'https://github.com/k1LoW/gh-setup/releases/download/v1.11.9/gh-setup_v1.11.9_darwin_amd64.zip'
+      sha256 'ce070ef6bc8aa0a04655b10515784470d08cb92d5bae827bc84a675836794022'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/gh-setup/releases/download/v1.11.8/gh-setup_v1.11.8_linux_amd64.tar.gz'
-      sha256 '33aea6b745ae1efa72dfb46f4c3e821b55c589393fb3c13929061bdc1cba3e3b'
+      url 'https://github.com/k1LoW/gh-setup/releases/download/v1.11.9/gh-setup_v1.11.9_linux_amd64.tar.gz'
+      sha256 '33fa42c082f5a26dafb97072657b56b0cd14e48334ced629e3ec1dc38c3d9202'
     end
   end
 
