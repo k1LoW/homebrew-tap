@@ -1,6 +1,6 @@
 cask "tiley" do
-  version "5.1.9"
-  sha256 "f225abf73baa142da59ab794011e22681ad3f58be06bafc2a51d8653f1052159"
+  version "5.2.1"
+  sha256 "035580e5b81e0ae8f5047488253a7e8c486689f06fa74c94fca2ccff8adb73c1"
 
   url "https://github.com/yusuke/tiley/releases/download/v#{version}/Tiley-#{version}.zip"
   name "Tiley"
