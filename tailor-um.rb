@@ -1,26 +1,26 @@
 class TailorUm < Formula
-  version '0.3.0'
+  version '0.4.0'
   homepage 'https://github.com/k1LoW/tailor-um'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/tailor-um/releases/download/v0.3.0/tailor-um_v0.3.0_darwin_arm64.zip'
-      sha256 '9a03ccfa49c6693b8de871d84a582a558cac4078c5b93d67b993b2b204e4bd00'
+      url 'https://github.com/k1LoW/tailor-um/releases/download/v0.4.0/tailor-um_v0.4.0_darwin_arm64.zip'
+      sha256 'bf1dee2e2fcacd76ccea25f195a103316ba3e25d8f4518e64120cd4edb3a9fa9'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tailor-um/releases/download/v0.3.0/tailor-um_v0.3.0_darwin_amd64.zip'
-      sha256 'b8942dbd461bd4e2cecd8389dc8d5e37210e858c2333ad35340ed65099cb2595'
+      url 'https://github.com/k1LoW/tailor-um/releases/download/v0.4.0/tailor-um_v0.4.0_darwin_amd64.zip'
+      sha256 'b9c1e9572baac7c4081a9745ba04518a06ca525a0b7b49e189b375f691934df5'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/k1LoW/tailor-um/releases/download/v0.3.0/tailor-um_v0.3.0_linux_arm64.tar.gz'
-      sha256 'f180e31e28d0a73254a27e38182e1e7784359ee1c5229c6e5d8b15033d5fb3b3'
+      url 'https://github.com/k1LoW/tailor-um/releases/download/v0.4.0/tailor-um_v0.4.0_linux_arm64.tar.gz'
+      sha256 '0222ebd3e12ecdc74be16fc377d9511f9260d2c61fc5154f589e70a9915b363d'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/tailor-um/releases/download/v0.3.0/tailor-um_v0.3.0_linux_amd64.tar.gz'
-      sha256 '5a545c09c6b9ed29688c7b42e83db6eef91607139b0d21f8134631aa9823edc5'
+      url 'https://github.com/k1LoW/tailor-um/releases/download/v0.4.0/tailor-um_v0.4.0_linux_amd64.tar.gz'
+      sha256 '40c6faf68ae3c218382e677461b569cd3fc27fd09c665d380a1f62e72f7a314a'
     end
   end
 
