@@ -14,6 +14,11 @@ if [ ! -f "$file" ]; then
   exit 1
 fi
 
+if grep -q '^  # pinned' "$file"; then
+  echo "$file: pinned, skipped"
+  exit 0
+fi
+
 slug=$(grep -oE 'github\.com/[^/"]+/[^/"]+' "$file" | head -1 | sed 's|github\.com/||')
 if [ -z "$slug" ]; then
   echo "$file: no GitHub URL found" >&2
