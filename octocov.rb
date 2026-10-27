@@ -1,24 +1,24 @@
 class Octocov < Formula
   desc 'octocov is a toolkit for collecting code metrics (code coverage, code to test ratio and test execution time).'
-  version '0.83.3'
+  version '0.83.4'
   license "MIT"
   homepage 'https://github.com/k1LoW/octocov'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/k1LoW/octocov/releases/download/v0.83.3/octocov_v0.83.3_darwin_arm64.zip'
-      sha256 '8a6537a6c9d0ffcbe1d629e8d0d357c23722b8fb3d5d4b98e074334214db1f80'
+      url 'https://github.com/k1LoW/octocov/releases/download/v0.83.4/octocov_v0.83.4_darwin_arm64.zip'
+      sha256 '7dc191effd1b1e4e8cc85abba95197f8af813deadd7e1b04981e3866d0026701'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov/releases/download/v0.83.3/octocov_v0.83.3_darwin_amd64.zip'
-      sha256 '330b26c6100ded48fa0d8142b7aa479c96d85df725fce759abf088ec9ab4cfab'
+      url 'https://github.com/k1LoW/octocov/releases/download/v0.83.4/octocov_v0.83.4_darwin_amd64.zip'
+      sha256 'c279359b963ef24a21915bbce8d0af035e4ae317bb31d55990c4b1cab5f5995f'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/k1LoW/octocov/releases/download/v0.83.3/octocov_v0.83.3_linux_amd64.tar.gz'
-      sha256 '8d6576580d151e785474f193d740f63cb91b70ac767d402410fcd7f187a34202'
+      url 'https://github.com/k1LoW/octocov/releases/download/v0.83.4/octocov_v0.83.4_linux_amd64.tar.gz'
+      sha256 '238ea9ab3d3fa089448b18ee6d5d84f74f785fd03be4c8761e2fb455372b86f1'
     end
   end
 
